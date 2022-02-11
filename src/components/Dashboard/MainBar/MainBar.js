@@ -7,12 +7,10 @@ import Header from "../Header/Header";
 const MainBar = (props) => {
   return (
     <>
-      <>
-        <Header />
-        <Hero />
-        <Table />
-        <Details />
-      </>
+      <Header />
+      <Hero />
+      <Details />
+      <Table />
     </>
   );
 };
