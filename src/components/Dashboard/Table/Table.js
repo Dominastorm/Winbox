@@ -1,5 +1,5 @@
 import classes from "./Table.module.css";
-import Card from "../../UI/Card";
+import Card from "../../UI/Card/Card";
 
 const Table = () => {
   return (

@@ -9,3 +9,19 @@
 .background div {
   margin: 0 1vw;
 }
+
+.btn{
+  height: 5.2vh;
+  width: 11.111vw;
+  font-size: 1.65vh
+}
+h1{
+  font-weight: 600;
+  font-size: 3.76vh;
+}
+
+p{
+  font-weight: 400;
+  font-size: 1.65vh;
+  color: #707683;
+}

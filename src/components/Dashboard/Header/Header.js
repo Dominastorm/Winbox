@@ -1,5 +1,5 @@
 import classes from "./Header.module.css";
-import Card from "../../UI/Card";
+import Card from "../../UI/Card/Card";
 
 const Header = () => {
   return (
@@ -9,7 +9,7 @@ const Header = () => {
       </div>
       <div>
         <div>
-          
+
         </div>
         <div>
           <h3>Katarina</h3>

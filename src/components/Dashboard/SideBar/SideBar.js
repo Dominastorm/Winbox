@@ -1,5 +1,5 @@
 import classes from "./SideBar.module.css";
-import Card from "../../UI/Card";
+import Card from "../../UI/Card/Card";
 
 const SideBar = () => {
   return (
