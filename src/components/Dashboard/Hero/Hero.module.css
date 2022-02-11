@@ -1,0 +1,11 @@
+.background {
+  height: 12.7vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.background div {
+  margin: 0 1vw;
+}
