@@ -6,8 +6,8 @@ const Hero = () => {
   return (
     <Card className={classes.background}>
       <div>
-        <h1>Warm up inbox</h1>
-        <p>Manage inboxes you want to warm-up (0/0 used)</p>
+        <h1 className={classes.heading}>Warm up inbox</h1>
+        <p className={classes.parah}>Manage inboxes you want to warm-up (0/0 used)</p>
       </div>
       <div>
         <Button className={classes.btn}>Add new inbox</Button>

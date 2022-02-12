@@ -15,12 +15,14 @@
   width: 11.111vw;
   font-size: 1.65vh
 }
-h1{
+
+.heading{
   font-weight: 600;
   font-size: 3.76vh;
 }
 
-p{
+.parah{
+  margin-top: 1vh;
   font-weight: 400;
   font-size: 1.65vh;
   color: #707683;
