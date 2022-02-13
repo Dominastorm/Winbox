@@ -1,9 +1,13 @@
 import Sidebar from "./SideBar/SideBar";
 import classes from "./Dashboard.module.css";
 import MainBar from "./MainBar/MainBar";
+import Modal from "../UI/Modal/Modal";
+import Step2 from "./PopUp/Step2/Step2"
 
 const Dashboard = () => {
   return (
+    <>
+    <Step2/>
     <div className={classes.container}>
       <div className={classes.sidebar}>
         <Sidebar />
@@ -12,6 +16,7 @@ const Dashboard = () => {
         <MainBar />
       </div>
     </div>
+    </>
   );
 };
 
