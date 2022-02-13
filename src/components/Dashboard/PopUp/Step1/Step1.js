@@ -4,24 +4,14 @@ import Button from "../../../UI/Button/Button";
 import Button2 from "../../../UI/Button2/Button2";
 import GoogleIcon from "./GoogleIcon";
 import EmailIcon from "./EmailIcon";
+import Heading from "../Elements/Heading";
+import Heading2 from "../Elements/Heading2";
 
 const Step1 = () => {
   return (
     <Modal>
-      <div className={classes.head}>
-        <div className={classes.flex}>
-          <h1 className={classes.heading}>Step 1-</h1>
-          <h1 className={classes.headingblue}>Choose Inbox provider</h1>
-        </div>
-        <div>
-          <h3>x</h3>
-        </div>
-      </div>
-      <div>
-        <h3 className={classes.heading3}>
-          Select the provider of the inbox you want to warm-up
-        </h3>
-      </div>
+      <Heading step="Step 1 - ">Choose Inbox provider</Heading>
+      <Heading2>Select the provider of the inbox you want to warm-up</Heading2>
       <div className={classes.flex}>
         <Button2
           className={classes.btnsize}

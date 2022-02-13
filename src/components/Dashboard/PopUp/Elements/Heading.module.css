@@ -1,0 +1,26 @@
+.head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid #EBEFF2;
+  margin-bottom: 2.5vh;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1vh 0;
+}
+
+.heading {
+  font-weight: 600;
+  font-size: 2.12vh;
+  color: #323C47;
+}
+
+.headingblue {
+  font-weight: 600;
+  font-size: 2.12vh;
+  color: #0415AA;
+}

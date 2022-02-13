@@ -1,11 +1,3 @@
-.head {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  border-bottom: 1px solid #EBEFF2;
-  margin-bottom: 2.5vh;
-}
-
 .flex {
   display: flex;
   flex-direction: row;
@@ -13,30 +5,6 @@
   padding: 1vh 0;
 }
 
-.heading {
-  font-weight: 600;
-  font-size: 2.12vh;
-  color: #323C47;
-}
-
-.headingblue {
-  font-weight: 600;
-  font-size: 2.12vh;
-  color: #0415AA;
-}
-
-.heading3 {
-  color: #323C47;
-  margin: 3.5vh 0 2vh 0;
-  font-weight: 500;
-  font-size: 1.65vh;
-}
-
-.btn {
-  height: 5.2vh;
-  width: 11.111vw;
-  font-size: 1.65vh
-}
 
 .btnsize {
   width: 49%;

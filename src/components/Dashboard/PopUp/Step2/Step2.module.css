@@ -1,43 +1,68 @@
-.head{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  border-bottom: 1px solid #EBEFF2;
-}
-
-.flex{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  padding: 1vh 0;
-}
-
-.flexend{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  padding: 1vh 0;
-}
-
-.heading{
-  font-weight: 600;
-  font-size: 2.12vh;
-}
-
-.headingblue{
-  font-weight: 600;
-  font-size: 2.12vh;
-  color: #0415AA;
-}
-
-.heading3{
-  margin: 3vh 0;
+.label {
   font-weight: 500;
+  font-size: 12px;
+  color: #707683;
+  font-size: 1.41vh;
+  display: inline;
+}
+
+.asterik {
+  display: inline;
+  color: red;
+  font-size: 1.41vh;
+}
+
+.input {
+  display: block;
+  width: 45%;
+  height: ;
+  border: 2px solid #EBEFF2;
+  box-sizing: border-box;
+  border-radius: 4px;
+  color: #323C47;
+  padding: 1vh 0.5vw;
+}
+
+.redbtn {
+  border: 1px solid #DE5246;
+  background: #DE5246;
+  color: white;
+  cursor: pointer;
+  border-radius: 100px;
+  font-weight: 600;
+  height: 5.2vh;
+  width: 12vw;
+  font-size: 1.65vh;
+  margin: 3vh 0;
+}
+
+.redbtn:hover,
+.redbtn:active {
+  background: #ff5f52;
+  border-color: #ff5f52;
+}
+
+.bbbtn {
+  border: 1px solid #0415AA;
+  background: white;
+  color: #0415AA;
+  cursor: pointer;
+  border-radius: 100px;
+  font-weight: 600;
+  height: 5.2vh;
+  width: 10vw;
   font-size: 1.65vh;
 }
 
-.btn{
-  height: 5.2vh;
-  width: 11.111vw;
-  font-size: 1.65vh
+.bbbtn:hover,
+.bbbtn:active {
+  border-color: #041186;
+  color: #041186;
+}
+
+.flexsb {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2vh 0;
 }
