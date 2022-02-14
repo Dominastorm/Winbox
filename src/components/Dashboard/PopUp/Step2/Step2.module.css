@@ -42,6 +42,16 @@
   border-color: #ff5f52;
 }
 
+.redbtn div{
+  height: 2px;
+  display: inline;
+}
+
+.redbtn p{
+  display:inline-block;
+}
+
+
 .bbbtn {
   border: 1px solid #0415AA;
   background: white;

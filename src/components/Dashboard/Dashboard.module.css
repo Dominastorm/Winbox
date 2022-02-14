@@ -1,19 +1,29 @@
+.cont{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
 .container{
   display:flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 2.5vh;
+  margin: 2.5vh 1.2vw;
+  width: 97vw;
 }
 
 .sidebar{
-  width: 5vw;
-  height: 95vh;
-  padding-right: 0.5vw;
+  width: 60px;
+  padding-right: 6px;
 }
 .main{
   display:flex;
   flex-direction: column;
-  width: 91.66667vw;
-  height: 95vh;
+  flex: 22;
   justify-content: space-between;
+  height: 95vh;
+}
+
+.main div{
+  padding: 1vh;
 }

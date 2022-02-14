@@ -3,6 +3,7 @@ import Modal from "../../../UI/Modal/Modal";
 import Heading from "../Elements/Heading";
 import Heading2 from "../Elements/Heading2";
 import Button from "../../../UI/Button/Button";
+import GoogleIcon from "../Elements/GoogleIcon";
 
 const Step2 = () => {
   return (
@@ -14,8 +15,15 @@ const Step2 = () => {
           <p className={classes.label}>Campaign Name</p>
           <p className={classes.asterik}>*</p>
         </label>
-        <input className={classes.input} placeholder="Campaign Name"/>
-        <button className={classes.redbtn}>Sign in with Google</button>
+        <input className={classes.input} placeholder="Campaign Name" />
+        <button className={classes.redbtn}>
+          <div>
+            <GoogleIcon />
+          </div>
+          <p>
+          Sign in with Google
+          </p>
+        </button>
       </form>
       <div className={classes.flexsb}>
         <button className={classes.bbbtn}>Previous</button>

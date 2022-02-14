@@ -1,5 +1,10 @@
 import classes from "./SideBar.module.css";
 import Card from "../../UI/Card/Card";
+import MessageIcon from "./icons/MessageIcon";
+import QuestionIcon from "./icons/QuestionIcon";
+import SettingsIcon from "./icons/SettingsIcon";
+import SheildIcon from "./icons/SheildIcon";
+import Button3 from "./Button3";
 
 const SideBar = () => {
   return (
@@ -9,18 +14,22 @@ const SideBar = () => {
           <img src="images/expand.png" className={classes.expand} />
         </div>
         <div className={classes.container}>
-          <h1>N</h1>
-          <p>n</p>
-          <h1>N</h1>
-          <p>n</p>
+          <Button3 parah="Inboxes">
+            <MessageIcon />
+          </Button3>
+          <Button3 parah="Blacklists & DNS Checker">
+            <SheildIcon />
+          </Button3>
         </div>
       </span>
       <span>
         <div className={classes.containerTop}>
-          <h1>N</h1>
-          <p>n</p>
-          <h1>N</h1>
-          <p>n</p>
+          <Button3 parah="Help">
+            <QuestionIcon />
+          </Button3>
+          <Button3 parah="Settings">
+            <SettingsIcon />
+          </Button3>
         </div>
       </span>
     </Card>

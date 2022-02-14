@@ -1,0 +1,14 @@
+.container {
+  width: 80%;
+  padding: 1vh 0 2vh 0;
+  text-align: center;
+}
+
+.container p {
+  padding-top: 0.5vh;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.5vw;
+  color: #b2bfd0;
+}

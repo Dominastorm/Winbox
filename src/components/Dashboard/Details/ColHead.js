@@ -1,4 +1,5 @@
 import classes from "./ColHead.module.css";
+import ArrowIcon from "./ArrowIcon"
 
 const ColHead = (props) => {
   return (
@@ -6,8 +7,8 @@ const ColHead = (props) => {
       <div>
         <p className={classes.para}>{props.children}</p>
       </div>
-      <div>
-        <p>d</p>
+      <div className={classes.icon}>
+        <ArrowIcon/>
       </div>
     </div>
   );

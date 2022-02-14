@@ -1,4 +1,5 @@
 import classes from "./Heading.module.css";
+import DelIcon from "./DelIcon"
 
 const Heading = (props) => {
   return (
@@ -7,8 +8,8 @@ const Heading = (props) => {
         <h1 className={classes.heading}>{props.step}</h1>
         <h1 className={classes.headingblue}>{props.children}</h1>
       </div>
-      <div>
-        <h3>x</h3>
+      <div className={classes.icon}>
+        <DelIcon/>
       </div>
     </div>
   );
