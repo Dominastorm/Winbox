@@ -1,5 +1,5 @@
 import classes from "./Header.module.css";
-import Card from "../../UI/Card/Card";
+import Card from "../../../UI/Card/Card";
 import NotifIcon from "./NotifIcon";
 
 const Header = () => {

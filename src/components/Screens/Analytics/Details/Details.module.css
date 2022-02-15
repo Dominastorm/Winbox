@@ -1,0 +1,11 @@
+.flex {
+  height: 9.15vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.block{
+  width: 25%;
+}

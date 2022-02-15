@@ -1,5 +1,5 @@
 import classes from "./ColHead.module.css";
-import ArrowIcon from "./ArrowIcon"
+import ArrowIcon from "../../../UI/ArrowIcon"
 
 const ColHead = (props) => {
   return (

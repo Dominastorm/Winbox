@@ -1,9 +1,4 @@
-.cont{
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-}
+
 .container{
   display:flex;
   flex-direction: row;
@@ -14,16 +9,16 @@
 
 .sidebar{
   width: 60px;
+  height: 95vh;
   padding-right: 6px;
 }
+
 .main{
   display:flex;
   flex-direction: column;
-  flex: 22;
+  flex: 1;
   justify-content: space-between;
   height: 95vh;
-}
-
-.main div{
-  padding: 1vh;
+  overflow-y: auto;
+  overflow-x: hidden;
 }

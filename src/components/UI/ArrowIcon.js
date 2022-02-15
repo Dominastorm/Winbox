@@ -1,6 +1,7 @@
-const ArrowIcon = () => {
+const ArrowIcon = (props) => {
   return (
     <svg
+      className={props.rotate}
       width="3vh"
       height="auto"
       viewBox="0 0 24 24"

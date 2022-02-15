@@ -1,8 +1,8 @@
 import classes from "./Step2.module.css";
-import Modal from "../../../UI/Modal/Modal";
+import Modal from "../../../../UI/Modal/Modal";
 import Heading from "../Elements/Heading";
 import Heading2 from "../Elements/Heading2";
-import Button from "../../../UI/Button/Button";
+import Button from "../../../../UI/Button/Button";
 import GoogleIcon from "../Elements/GoogleIcon";
 
 const Step2 = () => {

@@ -1,5 +1,5 @@
 import classes from "./Details.module.css";
-import Card from "../../UI/Card/Card";
+import Card from "../../../UI/Card/Card";
 import ColHead from "./ColHead"
 
 const Details = () => {
