@@ -1,11 +1,12 @@
 .flex {
-  height: 9.15vh;
+  height: 15vh;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  margin-top: 1vh;
 }
 
 .block{
-  width: 25%;
+  flex: 1;
 }

@@ -1,0 +1,17 @@
+.background {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 9.41vh;
+  align-items: center;
+}
+
+.background div {
+  margin: 0 2vh;
+}
+
+.heading {
+  font-weight: 500;
+  font-size: 1.65vh;
+  color: #323C47;
+}

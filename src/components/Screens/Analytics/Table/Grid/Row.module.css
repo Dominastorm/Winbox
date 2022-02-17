@@ -1,12 +1,12 @@
-.flex {
+.background {
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: space-between;
+  height: 7.05vh;
+  align-items: center;
   margin-top: 1vh;
 }
 
-.table {
-  width: 75%;
-  height: 60vh;
+.head{
+  padding: 0vh 1vw;
 }

@@ -1,18 +1,19 @@
 import classes from "./Table.module.css";
-import Card from "../../../UI/Card/Card";
-import Button from "../../../UI/Button/Button";
+import Details from "./Details/Details";
+import Header from "./Header/Header";
+import Grid from "./Grid/Grid";
+import Recent from "./Recent/Recent";
 
-const Table= () => {
+const Table = () => {
   return (
-    <Card className={classes.background}>
-      <div>
-        <button></button>
-        <p className={classes.parah}>Manage inboxes you want to warm-up (0/0 used)</p>
+    <div className={classes.flex}>
+      <div className={classes.table}>
+        <Header />
+        <Details />
+        <Grid />
       </div>
-      <div>
-        <Button className={classes.btn}>Add new inbox</Button>
-      </div>
-    </Card>
+      <Recent />
+    </div>
   );
 };
 

@@ -1,0 +1,14 @@
+.flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  height: 45%;
+}
+
+.para{
+  font-weight: 600;
+  color:#323C47;
+  font-size: 1.65vh;
+}

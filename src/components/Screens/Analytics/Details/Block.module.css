@@ -4,7 +4,8 @@
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  padding: 5.5vh 4vh;
+  padding: 0 4vh;
+  height: 15vh;
 }
 
 .amount{

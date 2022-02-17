@@ -4,13 +4,13 @@ import Button from "../../../UI/Button/Button";
 
 const Graph = () => {
   return (
-    <div>
+    <div className={classes.background}>
     <Card className={classes.bar}>
       <div>
 
       </div>
     </Card>
-    <Card className={classes.cicle}>
+    <Card className={classes.circle}>
       <div>
 
       </div>

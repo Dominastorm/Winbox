@@ -8,6 +8,7 @@ import Step2 from "./PopUp/Step2/Step2"
 const Dashboard = () => {
   return (
     <>
+    <Step1/>
     <div className={classes.container}>
       <div className={classes.sidebar}>
         <Sidebar />

@@ -1,0 +1,43 @@
+.padding {
+  padding: 2vh 2vw;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2vh 0;
+}
+
+.background {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 2vh;
+  border-bottom: 1px solid #EBEFF2;
+}
+
+.dets {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vh 0;
+  border-bottom: 1px solid #EBEFF2;
+  margin-bottom: 2.5vh;
+}
+
+.heading {
+  width: 25%;
+  font-weight: 600;
+  font-size: 1.647vh;
+  color: #323c47;
+}
+
+.parah {
+  width: 25%;
+  font-weight: 500;
+  font-size: 1.412vh;
+  color: #323c47;
+}
