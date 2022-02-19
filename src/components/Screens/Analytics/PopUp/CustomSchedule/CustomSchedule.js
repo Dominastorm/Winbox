@@ -2,7 +2,6 @@ import classes from "./CustomSchedule.module.css";
 import Modal from "../../../../UI/Modal/Modal";
 import Heading from "../../../Dashboard/PopUp/Elements/Heading";
 import Button from "../../../../UI/Button/Button";
-import BlueButton from "../../../../UI/BlueButton/BlueButton";
 
 const Step2 = () => {
   return (
@@ -25,7 +24,7 @@ const Step2 = () => {
         </div>
         <div className={classes.flex}>
           <div>
-            <BlueButton>Close</BlueButton>
+            <Button className={classes.BlueButton}>Close</Button>
           </div>
           <div>
             <Button>Save</Button>

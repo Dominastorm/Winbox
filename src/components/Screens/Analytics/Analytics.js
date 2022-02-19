@@ -3,13 +3,13 @@ import Graph from "./Graph/Graph";
 import Details from "./Details/Details";
 import Table from "./Table/Table";
 import Header from "./Header/Header";
-import PopUp from "./PopUp/CustomSchedule/CustomSchedule";
+import CustomSchedule from "./PopUp/CustomSchedule/CustomSchedule";
 import classes from "./Analytics.module.css";
 
 const Analytics = () => {
   return (
     <>
-    <PopUp/>
+      <CustomSchedule/>
       <div className={classes.container}>
         <div className={classes.sidebar}>
           <Sidebar />

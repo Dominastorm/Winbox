@@ -5,10 +5,11 @@ import ColHead from "./ColHead"
 const Details = () => {
   return (
     <Card className={classes.background}>
-      <ColHead className={classes.head}>Inbox</ColHead>
-      <ColHead className={classes.head}>Sent today</ColHead>
-      <ColHead className={classes.head}>Created</ColHead>
-      <ColHead className={classes.head} rotate="true">Status</ColHead>
+      <ColHead className={classes.head}>Date</ColHead>
+      <ColHead className={classes.head}>Interactions</ColHead>
+      <ColHead className={classes.head}>Reply percent</ColHead>
+      <ColHead className={classes.head}>Progress</ColHead>
+      <ColHead className={classes.head}>Sent</ColHead>
       <ColHead className={classes.headlast}>Actions</ColHead>
     </Card>
   );

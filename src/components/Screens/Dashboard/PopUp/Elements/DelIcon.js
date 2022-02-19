@@ -1,8 +1,8 @@
 const DelIcon = () => {
   return (
     <svg
-      width="100%"
-      height="auto"
+      width="auto"
+      height="2.12vh"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

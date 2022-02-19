@@ -11,4 +11,12 @@
   font-weight: 500;
   color: #323C47;
   font-size: 1.41vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.para svg{
+  margin-right: 0.5vw;
 }

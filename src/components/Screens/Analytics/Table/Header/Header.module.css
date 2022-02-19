@@ -10,8 +10,20 @@
   margin: 0 2vh;
 }
 
-.heading {
-  font-weight: 500;
+.bluebutton {
+  border: 1px solid #0415AA;
+  background: white;
+  color: #0415AA;
+  cursor: pointer;
+  border-radius: 100px;
+  font-weight: 600;
+  height: 5.2vh;
+  width: 9vw;
   font-size: 1.65vh;
-  color: #323C47;
+}
+
+.bluebutton:hover,
+.bluebutton:active {
+  border-color: #041186;
+  color: #041186;
 }

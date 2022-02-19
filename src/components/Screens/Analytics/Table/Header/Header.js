@@ -1,15 +1,16 @@
 import classes from "./Header.module.css";
 import Card from "../../../../UI/Card/Card";
-import BlueButton from "../../../../UI/BlueButton/BlueButton";
+import Heading from "../../../../UI/Heading/Heading"
+import Button from "../../../../UI/Button/Button"
 
 const Details = () => {
   return (
     <Card className={classes.background}>
       <div>
-        <h3 className={classes.heading}>Custom Schedule</h3>
+        <Heading>Custom Schedule</Heading>
       </div>
       <div>
-        <BlueButton>Clear</BlueButton>
+        <Button className={classes.bluebutton}>Clear</Button>
       </div>
     </Card>
   );
