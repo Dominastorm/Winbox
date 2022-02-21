@@ -9,7 +9,6 @@ import classes from "./Analytics.module.css";
 const Analytics = () => {
   return (
     <>
-      <CustomSchedule/>
       <div className={classes.container}>
         <div className={classes.sidebar}>
           <Sidebar />

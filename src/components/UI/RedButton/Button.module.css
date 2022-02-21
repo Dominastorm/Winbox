@@ -1,0 +1,17 @@
+.redbutton {
+  border: 1px solid #DE5246;
+  background: #DE5246;
+  color: white;
+  cursor: pointer;
+  border-radius: 100px;
+  font-weight: 600;
+  height: 5.2vh;
+  width: 9vw;
+  font-size: 1.65vh;
+}
+
+.redbutton:hover,
+.redbutto:active {
+  background: #ff5f52;
+  border-color: #ff5f52;
+}
