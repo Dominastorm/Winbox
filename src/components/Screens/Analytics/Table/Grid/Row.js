@@ -3,6 +3,7 @@ import Col from "./Col";
 import Card from "../../../../UI/Card/Card";
 import DeleteIcon from "./DeleteIcon";
 import EditIcon from "./EditIcon";
+import Chart from "./Chart"
 
 const Row = (props) => {
   return (
@@ -10,7 +11,7 @@ const Row = (props) => {
       <Col className={classes.head}>{props.date}</Col>
       <Col className={classes.head}>{props.interactions}</Col>
       <Col className={classes.head}>{props.replypercent}</Col>
-      <Col className={classes.head}>{props.progress}</Col>
+      <Chart className={classes.head}>{props.progress}</Chart>
       <Col className={classes.head}>{props.sent}</Col>
       <Col className={classes.head}>
         <DeleteIcon />

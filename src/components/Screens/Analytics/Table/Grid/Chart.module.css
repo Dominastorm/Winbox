@@ -1,0 +1,38 @@
+.chart {
+  height: 7.05vh;
+  flex: 1;
+}
+
+.container {
+  height: 7.5vh;
+  width: 7.5vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.dough {
+  height: 7.5vh;
+  width: 7.5vh;
+  display: flex;
+  margin-bottom: 2vh;
+}
+
+.text {
+  height: 7.5vh;
+  width: 7.5vh;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  right: 0;
+}
+
+.text p {
+  color: #323c47;
+  font-size: 1.17vh;
+  font-weight: 500;
+  margin: 0;
+}

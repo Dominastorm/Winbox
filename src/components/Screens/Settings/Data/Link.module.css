@@ -1,0 +1,13 @@
+.notselected {
+  font-weight: 500;
+  font-size: 1.64vh;
+  color: #707683;
+  margin-right: 5vh;
+}
+
+.selected {
+  font-weight: 500;
+  font-size: 1.64vh;
+  color: #323c47;
+  margin-right: 5vh;
+}

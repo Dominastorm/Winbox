@@ -1,0 +1,59 @@
+.text p {
+  color: #323c47;
+  font-weight: 600;
+  font-size: 4.5vh;
+  margin: 0;
+}
+
+.text {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.doughnutchart {
+  margin-top: 10vh;
+  height: 26vh;
+  position: relative;
+}
+
+.color{
+  height: 2.5vh;
+  width: 2.5vh;
+  border-radius: 100%;
+}
+
+.analisys{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5vh;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2vh;
+}
+
+.row div{
+  margin: 0 0.25vw;
+}
+
+.heading{
+  font-size: 1.8vh;
+  color: #323c47;
+  font-weight: 600;
+}
+
+.parah{
+  font-size: 1.8vh;
+  color: #323c47;
+  font-weight: 400;
+}

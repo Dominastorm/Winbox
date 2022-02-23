@@ -1,0 +1,23 @@
+.container{
+  padding: 1vh 0;
+}
+
+.parah{
+  font-size: 1.41vh;
+  color: #707683;
+}
+
+.input{
+  margin: 0.5vh 0 0 0;
+  border: 1.5px solid #EBEFF2;;
+  padding: 1.5vh 1vw;
+  border-radius: 0.5vh;
+  width: 70%;
+
+}
+
+input::placeholder {
+  font-size: 1.88vh;
+  color: #323C47;
+  font-weight: 400;
+}

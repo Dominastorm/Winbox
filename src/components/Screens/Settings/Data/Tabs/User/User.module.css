@@ -1,0 +1,50 @@
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.background{
+  flex: 1;
+  padding: 2vh;
+  margin:0 1vh 1vh 0;
+}
+
+.profile{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 3vh 0 3vh 0;
+  border-bottom: 1px solid #EBEFF2;
+}
+
+.image{
+  height: 9vh;
+  width: 9vh;
+  border-radius: 100%;
+  background: #F3FAFE;
+  margin-right: 2vh;
+}
+
+.profiledes{
+  margin-top: 1vh;
+  font-size: 1.64vh;
+  color: #707683;
+}
+
+.input{
+  padding:2vh 0 2vh 0;
+  border-bottom: 1px solid #EBEFF2;
+}
+
+.passinput{
+  padding:3vh 0 5.5vh 0;
+  border-bottom: 1px solid #EBEFF2;
+}
+
+.flexend{
+  padding: 2vh 0;
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-end;
+}
