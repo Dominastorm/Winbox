@@ -1,7 +1,7 @@
 import classes from "./Row.module.css";
 import Col from "./Col";
 import Card from "../../../../UI/Card/Card";
-import DeleteIcon from "./DeleteIcon";
+import DeleteIcon from "../../../../Icons/DeleteIcon";
 import EditIcon from "./EditIcon";
 import Chart from "./Chart"
 

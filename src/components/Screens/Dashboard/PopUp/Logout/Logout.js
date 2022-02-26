@@ -1,6 +1,6 @@
 import classes from "./Logout.module.css";
 import Modal from "../../../../UI/Modal/Modal";
-import DelIcon from "../Elements/DelIcon";
+import DelIcon from "../../../../Icons/DelIcon";
 import Button from "../../../../UI/Button/Button";
 import GoogleIcon from "../Elements/GoogleIcon";
 import { Heading186 } from "../../../../UI/Heading/Heading";

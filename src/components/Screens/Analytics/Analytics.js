@@ -1,4 +1,4 @@
-import Sidebar from "../SideBar/SideBar";
+import Sidebar from "../../Elements/SideBar/SideBar";
 import Graph from "./Graph/Graph";
 import Details from "./Details/Details";
 import Table from "./Table/Table";

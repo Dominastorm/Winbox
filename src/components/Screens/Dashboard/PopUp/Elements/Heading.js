@@ -1,5 +1,5 @@
 import classes from "./Heading.module.css";
-import DelIcon from "./DelIcon"
+import DelIcon from "../../../../Icons/DelIcon"
 
 const Heading = (props) => {
   return (

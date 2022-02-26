@@ -1,4 +1,4 @@
-import Sidebar from "../SideBar/SideBar";
+import Sidebar from "../../Elements/SideBar/SideBar";
 import classes from "./Settings.module.css";
 import Header from "./Header/Header";
 import Data from "./Data/Data";

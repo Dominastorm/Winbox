@@ -1,0 +1,30 @@
+.background {
+  margin-bottom:1vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 9.41vh;
+  align-items: center;
+}
+
+.background p{
+  font-size: 1.41vh;
+  font-weight: 500;
+  color: #323C47;
+}
+
+.head{
+  flex: 1;
+  padding: 0vh 1vw;
+}
+
+.head2{
+  flex: 1;
+  padding: 0vh 1vw;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.head2 svg{
+  margin-right: 1vw;
+}

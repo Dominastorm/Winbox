@@ -1,0 +1,16 @@
+.background {
+  margin-top: 1vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 9.41vh;
+  align-items: center;
+}
+
+.head{
+  padding: 0vh 1vw;
+  border-right: 1px solid #EBEFF2;
+}
+.headlast{
+  padding: 0vh 1vw;
+}

@@ -1,0 +1,72 @@
+.flexend {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+}
+
+.flexcenter {
+  margin: 1vh 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading{
+  margin-bottom: 2vh;
+  font-size: 2.8vh;
+  font-weight: 700;
+  color: #323C47;
+}
+
+.heading2{
+  margin-top: 2vh;
+}
+
+.parah{
+  font-size: 1.64vh;
+  font-weight: 400;
+  color: #707683;
+  margin-top: 1vh
+}
+
+.copy{
+  margin-top: 2vh;
+  border-radius: 100px;
+  background: #F3FAFE;
+  height:4.7vh;
+  width:40%;
+  display: flex;
+  justify-content: space-between;
+  align-content:center;
+  flex-direction: row;
+}
+
+.copy div{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.copyparah{
+  margin-left: 2vh;
+  font-size: 1.41vh;
+  font-weight: 500;
+  color: #323C47;
+}
+
+.copybutton{
+  border-radius: 100px;
+  border: 1px solid #0415AA;
+  background: #0415AA;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4.7vh;
+  width: 4.7vh;
+}
+
+
+.button{
+  margin-top: 3vh;
+}

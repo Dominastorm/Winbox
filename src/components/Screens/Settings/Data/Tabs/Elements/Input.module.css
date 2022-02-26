@@ -16,7 +16,7 @@
 
 }
 
-input::placeholder {
+.input::placeholder {
   font-size: 1.88vh;
   color: #323C47;
   font-weight: 400;

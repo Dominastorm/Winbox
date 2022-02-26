@@ -1,14 +1,14 @@
 import Sidebar from "../../Elements/SideBar/SideBar";
-import classes from "./Dashboard.module.css";
+import classes from "./EmailBlacklistAndDNS.module.css";
 import MainBar from "./MainBar/MainBar";
 import Modal from "../../UI/Modal/Modal";
-import Step1 from "./PopUp/Step1/Step1"
-import Step2 from "./PopUp/Step2/Step2"
-import Logout from "./PopUp/Logout/Logout"
+import Runtest from "./Popups/Runtest"
+import EmailSpamChecker from "./Popups/EmailSpamChecker"
 
-const Dashboard = () => {
+const EmailBlacklistAndDNS = () => {
   return (
     <>
+    <EmailSpamChecker/>
     <div className={classes.container}>
       <div className={classes.sidebar}>
         <Sidebar />
@@ -21,4 +21,4 @@ const Dashboard = () => {
   );
 };
 
-export default Dashboard;
+export default EmailBlacklistAndDNS;
