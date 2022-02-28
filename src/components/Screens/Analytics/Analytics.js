@@ -2,7 +2,7 @@ import Sidebar from "../../Elements/SideBar/SideBar";
 import Graph from "./Graph/Graph";
 import Details from "./Details/Details";
 import Table from "./Table/Table";
-import Header from "./Header/Header";
+import Header from "../../Elements/Headerahb/Header";
 import CustomSchedule from "./PopUp/CustomSchedule/CustomSchedule";
 import classes from "./Analytics.module.css";
 
@@ -14,10 +14,10 @@ const Analytics = () => {
           <Sidebar />
         </div>
         <div className={classes.main}>
-          <Header />
-          <Details/>
-          <Graph/>
-          <Table/>
+          <Header parah="useremail@gmail.com" buttontext="Add new inbox" />
+          <Details />
+          <Graph />
+          <Table />
         </div>
       </div>
     </>

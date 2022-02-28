@@ -1,0 +1,45 @@
+.flex {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vw;
+}
+
+.flexstart {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+
+.flexstart div{
+  margin-right: 1vw;
+}
+
+.parah{
+  font-size: 1.64vh;
+  font-weight: 400;
+  color: #707683;
+  padding-top: 0.5vh;
+}
+
+.button {
+  border: 1px solid #0415AA;
+  background: #0415AA;
+  color: white;
+  cursor: pointer;
+  border-radius: 100px;
+  font-weight: 600;
+  height: 5.2vh;
+  width: 4.5vw;
+  font-size: 1.65vh
+}
+
+.button:hover,
+.button:active {
+  background: #041186;
+  border-color: #041186;
+}

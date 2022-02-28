@@ -1,0 +1,78 @@
+.flexhero{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 14.1vh;
+  margin-top: 1vh;
+}
+
+.flexdc{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.status{
+  background: #F3FAFE;
+  border-radius: 6px;
+  padding: 1vh 1.5vw;
+  margin: 0 1vw;
+}
+
+.status h3{
+  font-weight: 600;
+  font-size: 1.64vh;
+  color: #109CF1;
+}
+
+.bluebox{
+  margin-top: 1vh;
+  border: 2px solid #109CF1;
+  background: #F3FAFE;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 12.2vh;
+  padding: 0 1vw;
+}
+
+.parah{
+  font-size: 1.64vh;
+  color: #707683;
+  font-weight: 400;
+  margin-top: 1.5vh;
+  text-align: center;
+}
+
+.domaincheck{
+  height: 9.4vh;
+  margin-top: 1vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1vh;
+  padding: 2.5vh 1vw;
+}
+
+.margin{
+  margin-right: 0.5vw;
+}
+
+.domain{
+  margin-top: 1vh;
+  padding: 2vh 1vw;
+}
+
+.dropdownbtn{
+  background: #F3FAFE;
+  border: 0px;
+  border-radius: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5vh 0.5vw;
+}

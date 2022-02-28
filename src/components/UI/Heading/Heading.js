@@ -1,6 +1,6 @@
 import classes from "./Heading.module.css";
 
-const Heading145 = (props) => {
+export const Heading145 = (props) => {
   return <h3 className={`${props.className}  ${classes.heading} `}>{props.children}</h3>;
 };
 

@@ -3,7 +3,7 @@ import Card from "../../../UI/Card/Card";
 import DeleteIcon from "../../../Icons/DeleteIcon";
 import ChartIcon from "../../../Icons/ChartIcon";
 
-const Details = (props) => {
+const Row = (props) => {
   return (
     <Card className={classes.background}>
       <p className={classes.head}>{props.inbox}</p>
@@ -19,4 +19,4 @@ const Details = (props) => {
   );
 };
 
-export default Details;
+export default Row;

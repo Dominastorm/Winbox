@@ -20,7 +20,7 @@ const Runtest = () => {
         </div>
         <TableImage height="30vh" />
         <Heading186 className={classes.heading2}>
-          We are cheking the email you’ve sent. It may take up to 2 minutes{" "}
+          We are cheking the email you’ve sent. It may take up to 2 minutes
         </Heading186>
         <p className={classes.parah}>
           If you haven’t sent it yet, send the email you want to test to
