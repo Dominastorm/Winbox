@@ -1,0 +1,57 @@
+.container{
+  margin-top: 1vh;
+  padding: 1vh 5.8vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading{
+  color: #0415aa;;
+  padding-bottom: 1vh;
+  text-align: center;
+}
+
+.gif{
+  height: 70vh;
+  width: auto;
+}
+
+.headingparah{
+  font-size: 2.7vh;
+  padding-bottom: 2vh;
+  color: #323C47;
+  text-align: center;
+  width: 60%;
+}
+
+.button{
+  font-size: 2.7vh;
+  height: 7.5vh;
+  width: 13.5vw;
+}
+
+.al_video_image {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.videoPlayBtn {
+  width: 100px;
+  height: 70px;
+  border-radius: 10px;
+  position: absolute;
+  left: calc(50% - 45px);
+  top: calc(50% - 95px);
+  background: #000427d0;
+  text-align: center;
+  line-height: 70px;
+  font-size: 28px;
+  color: #fff;
+}
+.al_video_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

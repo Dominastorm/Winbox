@@ -4,6 +4,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 1vh;
 }
 
 .background span {
@@ -43,7 +44,7 @@
 }
 
 .userImg{
-  height: 20%;
+  height: 2.75vh;
   width: auto;
   object-fit: contain;
   padding-left: 1vw;

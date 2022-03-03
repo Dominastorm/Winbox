@@ -1,7 +1,7 @@
 const DeleteIcon = () => {
   return (
     <svg
-      width="2.8vh"
+      width="auto"
       height="2.8vh"
       viewBox="0 0 24 24"
       fill="none"

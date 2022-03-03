@@ -86,85 +86,93 @@ const data = {
 
 export default function App() {
   return (
-      <Bar
-        pointstyle="star"
-        data={{
-          labels: data.labels,
-          responsive: true,
-          offset: true,
-          datasets: [
-            {
-              label: "Replies",
-              borderColor: "#FCB376",
-              backgroundColor: "white",
-              data: data.Replies.dataSet,
-              cubicInterpolationMode: "monotone",
-              borderWidth: 2,
-              type: "line",
-            },
-            {
-              label: "Spam",
-              backgroundColor: "#FC7676",
-              data: data.Spam.dataSet,
-            },
-            {
-              label: "Sent",
-              backgroundColor: "#70C4F7",
-              data: data.Sent.dataSet,
-            },
-            {
-              label: "Scheduled",
-              backgroundColor: "#E7F5FE",
-              data: data.Scheduled.dataSet,
-            },
-          ],
-        }}
-        height={440}
-        options={{
-          plugins: {
-            legend: {
-              display: true,
-              position: "bottom",
-              align: "center",
-              labels: {
-                usePointStyle: true,
+    <Bar
+      pointstyle="star"
+      data={{
+        labels: data.labels,
+        responsive: true,
+        offset: true,
+        datasets: [
+          {
+            label: "Replies",
+            borderColor: "#FCB376",
+            backgroundColor: "white",
+            data: data.Replies.dataSet,
+            cubicInterpolationMode: "monotone",
+            borderWidth: 2,
+            type: "line",
+          },
+          {
+            label: "Spam",
+            backgroundColor: "#FC7676",
+            data: data.Spam.dataSet,
+          },
+          {
+            label: "Sent",
+            backgroundColor: "#70C4F7",
+            data: data.Sent.dataSet,
+          },
+          {
+            label: "Scheduled",
+            backgroundColor: "#E7F5FE",
+            data: data.Scheduled.dataSet,
+          },
+        ],
+      }}
+      height={440}
+      options={{
+        plugins: {
+          legend: {
+            display: true,
+            position: "bottom",
+            align: "center",
+            labels: {
+              font: {
+                size: 10
               },
+              usePointStyle: true,
             },
           },
-          responsive: true,
-          maintainAspectRatio: false,
-          scales: {
-            xAxes: {
-              stacked: true,
-              ticks: {
-                padding: 5,
+        },
+        responsive: true,
+        maintainAspectRatio: false,
+        scales: {
+          xAxes: {
+            stacked: true,
+            ticks: {
+              font:{
+                size:9,
               },
-              grid: {
-                drawBorder: false,
-                display: false,
-              },
+              padding: 5,
             },
-            yAxes: {
-              stacked: false,
-              grid: {
-                drawBorder: false,
-                color: "#E7F5FE",
-              },
-              ticks: {
-                beginAtZero: true,
-                maxTicksLimit: 6,
-                padding: 20,
-              },
+            grid: {
+              drawBorder: false,
+              display: false,
             },
           },
-          elements: {
-            point: {
-              backgroundColor: "white",
-              radius: 5,
+          yAxes: {
+            stacked: false,
+            grid: {
+              drawBorder: false,
+              color: "#E7F5FE",
+            },
+            ticks: {
+              font:{
+                size:9,
+              },
+              beginAtZero: true,
+              maxTicksLimit: 6,
+              padding: 20,
             },
           },
-        }}
-      />
-      
+        },
+        elements: {
+          point: {
+            backgroundColor: "white",
+            radius: 5,
+          },
+        },
+      }}
+    />
   );
 }

@@ -1,17 +1,28 @@
 .heading {
   font-weight: 500;
   font-size: 1.65vh;
-  color: #323C47;
+  color: #323c47;
 }
 
 .heading186 {
   font-weight: 600;
   font-size: 2.1vh;
-  color: #323C47;
+  color: #323c47;
 }
 
 .heading326 {
   font-weight: 600;
   font-size: 3.76vh;
-  color: #323C47;
+  color: #323c47;
+}
+.heading327 {
+  font-weight: 700;
+  font-size: 3.76vh;
+  color: #323c47;
+}
+
+.heading447 {
+  font-weight: 700;
+  font-size: 5.5vh;
+  color: #323c47;
 }

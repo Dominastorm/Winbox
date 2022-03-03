@@ -1,0 +1,41 @@
+.container{
+  margin: 1vh 5.8vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.heroText {
+  flex: 0 0 45%;
+}
+
+.heroTitle {
+  font-size: 6.8vh;
+  font-weight: 700;
+  padding-bottom: 2vh;
+  color: #0415aa;
+}
+
+.heading{
+  font-weight: 500;
+  font-size: 4vh;
+  color: #323C47;
+  padding-bottom: 1.5vh;
+}
+
+.gif{
+  height: 70vh;
+  width: auto;
+}
+
+.heroParah{
+  font-size: 2.7vh;
+  padding-bottom: 3vh;
+  color: #707683;
+}
+
+.button{
+  font-size: 2.7vh;
+  height: 7.5vh;
+  width: 13.5vw;
+}

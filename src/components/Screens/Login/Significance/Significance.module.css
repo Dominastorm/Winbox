@@ -1,0 +1,90 @@
+.container{
+  margin-top: 1vh;
+  padding: 0 5.8vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cont{
+  width: 100%;
+  padding: 1vh 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.con{
+  width: 100%;
+  margin: 1vh 0;
+  padding: 1vh 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:space-around;
+}
+
+.heading{
+  color: #0415aa;
+  padding-bottom: 1vh;
+  text-align: center;
+}
+
+.headingred{
+  display: inline;
+  color: #ED2F2F;
+  margin-bottom: 1vh;
+}
+
+.headingblue{
+  display: inline;
+  color: #0415aa;
+  margin-bottom: 1vh;
+}
+
+.headingnormal{
+  display: inline;
+  margin-bottom: 1vh;
+}
+
+.step{
+  color: #737485;
+  font-size: 2vh;
+  padding: 0.5vh 0;
+}
+
+.step span{
+  color: #ED2F2F;
+}
+
+.stepb{
+  color: #737485;
+  font-size: 2vh;
+  padding: 0.5vh 0;
+}
+
+.stepb span{
+  color: #0415aa;
+}
+
+
+.step div{
+  color: #0415aa;
+}
+
+.gif{
+  height: 70vh;
+  width: auto;
+}
+
+.details{
+  width: 45%;
+}
+
+.headingparah{
+  font-size: 2.7vh;
+  padding-bottom: 2vh;
+  color: #323C47;
+}
