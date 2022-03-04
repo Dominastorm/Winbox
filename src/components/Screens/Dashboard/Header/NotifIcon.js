@@ -1,6 +1,7 @@
-const NotifIcon = () => {
+const NotifIcon = (props) => {
   return (
     <svg
+    className={props.className}
       width="auto"
       height="3.2vh"
       viewBox="0 0 31 29"

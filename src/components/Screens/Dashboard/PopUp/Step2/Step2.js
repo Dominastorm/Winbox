@@ -3,7 +3,10 @@ import Modal from "../../../../UI/Modal/Modal";
 import Heading from "../Elements/Heading";
 import Heading2 from "../Elements/Heading2";
 import Button from "../../../../UI/Button/Button";
+import BlueButton from "../../../../UI/BlueButton/Button";
+import RedButton from "../../../../UI/RedButton/Button";
 import GoogleIcon from "../Elements/GoogleIcon";
+import Input from "../../../../Elements/Input/Input";
 
 const Step2 = () => {
   return (
@@ -11,22 +14,14 @@ const Step2 = () => {
       <Heading step="Step 2 - ">Connect your inbox</Heading>
       <Heading2>Select the provider of the inbox you want to warm-up</Heading2>
       <form>
-        <label>
-          <p className={classes.label}>Campaign Name</p>
-          <p className={classes.asterik}>*</p>
-        </label>
-        <input className={classes.input} placeholder="Campaign Name" />
-        <button className={classes.redbtn}>
-          <div>
-            <GoogleIcon />
-          </div>
-          <p>
-          Sign in with Google
-          </p>
-        </button>
+        <Input className={classes.input} required="true">Campaign </Input>
+        <RedButton className={classes.redbutton}>
+          <GoogleIcon />
+          <p className={classes.buttonparah}>Sign in with Google</p>
+        </RedButton>
       </form>
-      <div className={classes.flexsb}>
-        <Button className={classes.bluebutton}>Previous</Button>
+      <div className={classes.flexspacebetween}>
+        <BlueButton>Previous</BlueButton>
         <Button>Next</Button>
       </div>
     </Modal>

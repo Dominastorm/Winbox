@@ -6,7 +6,7 @@ import ArrowIcon from "../../Icons/ArrowIcon";
 const Header = (props) => {
   return (
     <Card className={classes.background}>
-      <div className={classes.background}>
+      <div className={classes.flex}>
         <button className={classes.back}>
           <div className={classes.icon}>
             <ArrowIcon rotate={classes.arrow} />

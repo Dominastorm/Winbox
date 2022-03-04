@@ -2,7 +2,7 @@ import classes from "./User.module.css";
 import Card from "../../../../../UI/Card/Card";
 import Button from "../../../../../UI/Button/Button";
 import Heading, { Heading186 } from "../../../../../UI/Heading/Heading";
-import Input from "../Elements/Input";
+import Input from "../../../../../Elements/Input/Input";
 
 const User = (props) => {
   return (

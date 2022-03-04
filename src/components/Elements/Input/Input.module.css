@@ -5,6 +5,13 @@
 .parah{
   font-size: 1.41vh;
   color: #707683;
+  display: inline;
+}
+
+.asterik{
+  font-size: 1.41vh;
+  color: #DE5246;
+  display: inline;
 }
 
 .input{

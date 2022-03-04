@@ -1,11 +1,12 @@
 const Icon = (props) => {
   return (
     <svg
-      width="auto"
-      height="6.5vh"
+      width="80px"
+      height="5.5vh"
       viewBox="0 0 158 56"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      display="inline"
     >
       <rect width="57" height="56" rx="5" fill="#0415AA" />
       <path

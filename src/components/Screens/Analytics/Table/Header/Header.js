@@ -1,7 +1,7 @@
 import classes from "./Header.module.css";
 import Card from "../../../../UI/Card/Card";
 import Heading from "../../../../UI/Heading/Heading"
-import Button from "../../../../UI/Button/Button"
+import BlueButton from "../../../../UI/BlueButton/Button"
 
 const Details = () => {
   return (
@@ -10,7 +10,7 @@ const Details = () => {
         <Heading>Custom Schedule</Heading>
       </div>
       <div>
-        <Button className={classes.bluebutton}>Clear</Button>
+        <BlueButton className={classes.bluebutton}>Clear</BlueButton>
       </div>
     </Card>
   );

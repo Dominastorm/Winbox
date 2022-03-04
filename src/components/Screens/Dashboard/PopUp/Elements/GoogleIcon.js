@@ -1,7 +1,7 @@
 const GoogleIcon = () => {
   return (
     <svg
-      width="auto"
+      width="2vw"
       height="2.2vh"
       display="inline"
       viewBox="0 0 20 20"

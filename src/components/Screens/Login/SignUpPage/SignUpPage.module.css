@@ -1,0 +1,69 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #0415aa;
+}
+
+.logocont {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 2vh;
+}
+
+.center {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 2vh 0;
+}
+
+.background {
+  width: 65vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 12vw;
+  border-radius: 0 12px 12px 0;
+}
+
+.heading {
+  color: #0415aa;
+  padding-top: 1vh;
+}
+
+.headingp {
+  margin-bottom: 1vh;
+}
+
+.button {
+  margin-top: 2vh;
+  width: 11.5vw;
+}
+
+.question {
+  margin-top: 3vh;
+}
+
+.link {
+  color: #0415aa;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.link:hover {
+  text-decoration: none;
+}
+
+.checkbox {
+  border: 1.5px solid #EBEFF2;
+}
+
+.checkboxparah {
+  display: inline;
+  margin-left: 0.5vw;
+}

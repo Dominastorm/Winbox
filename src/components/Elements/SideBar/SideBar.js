@@ -9,10 +9,11 @@ import Button3 from "./Button3";
 const SideBar = () => {
   return (
     <Card className={classes.background}>
-      <span>
+      <span className={classes.center}>
         <div className={classes.container}>
           <img src="images/expand.png" className={classes.expand} />
         </div>
+        <div className={classes.border} />
         <div className={classes.container}>
           <Button3 parah="Inboxes">
             <MessageIcon />
@@ -21,8 +22,10 @@ const SideBar = () => {
             <SheildIcon />
           </Button3>
         </div>
+        <div className={classes.border} />
       </span>
-      <span>
+      <span className={classes.center}>
+        <div className={classes.border} />
         <div className={classes.containerTop}>
           <Button3 parah="Help">
             <QuestionIcon />

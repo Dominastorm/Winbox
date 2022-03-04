@@ -2,7 +2,6 @@ import Sidebar from "../../Elements/SideBar/SideBar";
 import classes from "./Settings.module.css";
 import Header from "./Header/Header";
 import Data from "./Data/Data";
-// import User from "./User/User";
 
 const Settings = () => {
   return (

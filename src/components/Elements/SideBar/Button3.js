@@ -8,9 +8,7 @@ const Button3 = (props) => {
       <div className={classes.icon}>
       {props.children}
       </div>
-      <div className={classes.parah}>
-      <p>{props.parah}</p>
-      </div>
+      <p className={classes.parah}>{props.parah}</p>
       </div>
   );
 };

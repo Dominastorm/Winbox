@@ -1,78 +1,20 @@
-.label {
-  font-weight: 500;
-  font-size: 12px;
-  color: #707683;
-  font-size: 1.41vh;
-  display: inline;
+.redbutton{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 12vw !important;
+  margin-top:1.5vh;
 }
 
-.asterik {
-  display: inline;
-  color: red;
-  font-size: 1.41vh;
+.buttonparah{
+  width: 8.3vw;
 }
 
-.input {
-  display: block;
-  width: 45%;
-  height: ;
-  border: 2px solid #EBEFF2;
-  box-sizing: border-box;
-  border-radius: 4px;
-  color: #323C47;
-  padding: 1vh 0.5vw;
-}
-
-.redbtn {
-  border: 1px solid #DE5246;
-  background: #DE5246;
-  color: white;
-  cursor: pointer;
-  border-radius: 100px;
-  font-weight: 600;
-  height: 5.2vh;
-  width: 12vw;
-  font-size: 1.65vh;
-  margin: 3vh 0;
-}
-
-.redbtn:hover,
-.redbtn:active {
-  background: #ff5f52;
-  border-color: #ff5f52;
-}
-
-.redbtn div{
-  height: 2px;
-  display: inline;
-}
-
-.redbtn p{
-  display:inline-block;
-}
-
-
-.flexsb {
+.flexspacebetween {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 2vh 0;
-}
-
-.bluebutton {
-  border: 1px solid #0415AA;
-  background: white;
-  color: #0415AA;
-  cursor: pointer;
-  border-radius: 100px;
-  font-weight: 600;
-  height: 5.2vh;
-  width: 9vw;
-  font-size: 1.65vh;
-}
-
-.bluebutton:hover,
-.bluebutton:active {
-  border-color: #041186;
-  color: #041186;
+  margin-top: 1vh;
 }

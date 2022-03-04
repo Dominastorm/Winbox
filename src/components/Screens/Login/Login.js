@@ -5,17 +5,22 @@ import Significance from "./Significance/Significance";
 import Working from "./Working/Working";
 import Carousel from "./Carousel/Carousel";
 import Why from "./Why/Why";
+import LoginPage from "./LoginPage/LoginPage";
+import SignUpPage from "./SignUpPage/SignUpPage";
 
 const Report = (props) => {
   return (
-    <div className={classes.container}>
-    <Hero/>
-    <Carousel/>
-    <Significance/>
-    <Working/>
-    <Why/>
-    </div>
+    <LoginPage/>
   );
 };
 
 export default Report;
+
+
+<div className={classes.container}>
+<Hero/>
+<Carousel/>
+<Significance/>
+<Working/>
+<Why/>
+</div>

@@ -4,31 +4,33 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  padding: 0 1vw;
 }
 
-.parah{
+.flex {
+  height: 9.15vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.parah {
   font-size: 1.6vh;
   font-weight: 500;
 }
 
-.back{
+.back {
   background: none;
-	color: inherit;
-	border: none;
-	padding: 1vh 1vw;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
+  border: none;
+  margin-right: 1vw;
+  cursor: pointer;
 }
 
-.arrow{
+.arrow {
   transform: rotate(90deg);
 }
 
-.icon{
+.icon {
   margin-top: 1vh;
-}
-
-.btn{
-  padding: 0 1vw;
 }

@@ -4,11 +4,10 @@
   text-align: center;
 }
 
-.container p {
-  padding-top: 0.5vh;
+.parah {
   font-family: Poppins;
   font-style: normal;
   font-weight: 500;
-  font-size: 0.5vw;
+  font-size: 1.3vh;
   color: #b2bfd0;
 }
