@@ -8,6 +8,7 @@ import Logo from "../../../Icons/Logo";
 const User = (props) => {
   return (
     <div className={classes.container}>
+      <div></div>
       <Card className={classes.background}>
         <div className={classes.logocont}>
           <Heading326 className={classes.heading}>Welcome to the</Heading326>
@@ -34,7 +35,6 @@ const User = (props) => {
           <a className={classes.link}>Sign in</a>
         </Heading>
       </Card>
-      <div></div>
     </div>
   );
 };

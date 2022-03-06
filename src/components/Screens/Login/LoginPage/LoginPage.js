@@ -19,6 +19,9 @@ const User = (props) => {
           <Input required="true">Email</Input>
           <Input required="true">Password</Input>
         </div>
+        <div className={classes.flexend}>
+        <Heading><a className={classes.link} style={{color:"#707683"}}>Forgot Password?</a></Heading>
+        </div>
         <div className={classes.button}>
           <Button>Sign In</Button>
         </div>
