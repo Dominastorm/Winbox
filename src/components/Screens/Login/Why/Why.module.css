@@ -1,9 +1,31 @@
 .container{
-  padding: 0 5.8vh;
+  padding: 5vh 8vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.flex{
+  display: flex;
+  justify-content: space-between;
+  width:100%;
+  margin: 4vh 0;
+}
+
+.block{
+  width: 100%;
+  margin: 4vh 0;
+  padding: 6vh 3vw;;
+  box-shadow: 15px 15px 50px rgb(4 21 170 / 16%);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.flexcol{
+  display: flex;
+  flex-direction: column;
 }
 
 .heading{
@@ -16,6 +38,11 @@
   text-align: center;
 }
 
+.head{
+  margin-bottom: 2vh;
+  color: #0415aa;
+}
+
 .gif{
   height: 70vh;
   width: auto;
@@ -26,6 +53,10 @@
   padding-bottom: 2vh;
   text-align: center;
   color: #323C47;
+}
+
+.lastCard{
+  margin-right: 0 !important;
 }
 
 .button{

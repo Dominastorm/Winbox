@@ -1,7 +1,29 @@
+.container {
+  padding: 4vh 8vw;
+  border-bottom: 1px solid #B0B6F1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .headerMenu {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 3.5vh 0;
   width: 60%;
+}
+
+.button{
+  font-size: 2.7vh;
+  height: 7.5vh;
+  width: 13.5vw;
+  margin-left: 2vw;
+}
+
+.bluebutton{
+  font-size: 2.7vh;
+  height: 7.5vh;
+  width: 16.5vw;
+  margin-left: 2vw;
 }

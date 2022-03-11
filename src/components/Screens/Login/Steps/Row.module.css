@@ -1,0 +1,44 @@
+.container{
+    margin: 3vh 5.8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.details{
+  flex: 0 0 45%;
+  display: flex;
+  align-items:flex-start;
+  justify-content: space-around;
+}
+
+.cont{
+  margin-top: 2vh;
+}
+
+.stepnumber {
+  font-family: 'Lato' , sans-serif;
+  font-weight: 700;
+  font-size: 9vh;
+  color: #0415aa;
+  padding:1vh 1vw 0 0;
+}
+
+.parah {
+  color: #737485;
+  font-size: 2.2vh;
+  padding: 2vh 0;
+}
+
+.link{
+  color: #0415aa;
+  border-bottom: 2px solid #0415aa;
+  font-size: 2.7vh;
+  padding-top: 1vh;
+}
+
+.link:hover{
+  color:#041186;
+  border-color: #041186;
+  cursor: pointer;
+}

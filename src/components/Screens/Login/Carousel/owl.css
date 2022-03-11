@@ -1,0 +1,28 @@
+.owl-prev,
+.owl-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: white !important;
+  border-radius: 100px !important;
+  box-shadow: 10px 10px 40px rgb(4 21 170 / 30%);
+  color: #0415aa !important;
+}
+
+.owl-next:hover {
+  background-color: #0415aa !important;
+  color: white !important;
+}
+
+.owl-prev:hover {
+  background-color: #0415aa !important;
+  color:white !important;
+}
+
+.owl-prev {
+  left: -2vw;
+}
+
+.owl-next {
+  right: -2vw;
+}

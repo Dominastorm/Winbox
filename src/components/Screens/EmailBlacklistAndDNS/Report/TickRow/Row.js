@@ -1,9 +1,9 @@
 import classes from "./Row.module.css";
-import TickIcon from "../Icons/TickIcon";
+import TickIcon from "./TickIcon";
 
 const Row = (props) => {
   return (
-    <div className={classes.domain}>
+    <div className={`${props.className}  ${classes.domain} `}>
       <div className={classes.flex}>
         <div className={classes.flex}>
             <TickIcon />

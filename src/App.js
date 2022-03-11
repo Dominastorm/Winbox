@@ -7,7 +7,10 @@ import Login from "./components/Screens/Login/Login";
 import EmailBlacklistAndDNS from "./components/Screens/EmailBlacklistAndDNS/EmailBlacklistAndDNS";
 
 function App() {
-  return <Analytics/>
+  return <Login/>
 }
 
 export default App;
+(<div className={classes.container}>
+  <Login/>
+</div>)

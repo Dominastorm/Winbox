@@ -1,5 +1,5 @@
 .container{
-  padding: 0 5.8vh;
+  padding: 8vh 8vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,24 +16,7 @@
   text-align: center;
 }
 
-.gif{
-  height: 70vh;
-  width: auto;
-}
 .cont{
   width: 100%;
   padding: 1vh 0;
-}
-
-.headingparah{
-  font-size: 2.7vh;
-  padding-bottom: 2vh;
-  text-align: center;
-  color: #323C47;
-}
-
-.button{
-  font-size: 2.7vh;
-  height: 7.5vh;
-  width: 13.5vw;
 }

@@ -1,0 +1,50 @@
+.container {
+  padding: 0 8vw;
+  background-color: #0415aa;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.container2 {
+  padding: 2vh 5.8vw;
+  background-color: #0415aa;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.logo{
+  margin-top: 8vh;
+}
+
+.parah{
+  font-size: 2.8vh;
+  font-weight: 400;
+  margin-top: 4vh;
+  width:40%;
+}
+
+.links{
+  display: flex;
+  flex-direction: row;
+  margin: 6vh 0 8vh 0;
+}
+
+.links a{
+  border: 2px solid #fff;
+  border-radius: 4px;
+  padding: 1.5vh 0;
+  margin-right: 1vw;
+  display: flex;
+  align-items: center;
+}
+
+.links a:hover{
+  background-color: #fff;
+  color: #0415aa;
+}
+
+.copyrighttext{
+  font-size: 2.8vh;
+}

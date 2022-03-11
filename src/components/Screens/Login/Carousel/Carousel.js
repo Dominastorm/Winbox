@@ -1,6 +1,8 @@
 import classes from "./Carousel.module.css";
 import { Heading447 } from "../../../UI/Heading/Heading";
-import Card from "../../../UI/Card/Card"
+import Card from "../../../UI/Card/Card";
+import Owl from "./Owl";
+
 const Carousel = (props) => {
   return (
     <div className={classes.container}>
@@ -12,7 +14,9 @@ const Carousel = (props) => {
           email service provider.
         </Heading447>
       </Card>
-      <div></div>
+      <div>
+        <Owl />
+      </div>
     </div>
   );
 };

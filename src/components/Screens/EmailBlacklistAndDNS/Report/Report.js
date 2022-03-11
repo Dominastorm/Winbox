@@ -6,7 +6,7 @@ import MessageIcon from "./Icons/MessageIcon";
 import ScoreIcon from "./Icons/ScoreIcon";
 import Heading, { Heading186 } from "../../../UI/Heading/Heading";
 import DropdownIcon from "../../../Icons/DropdownIcon";
-import Row from "./Row/Row";
+import Row from "./TickRow/Row";
 
 const Report = (props) => {
   return (

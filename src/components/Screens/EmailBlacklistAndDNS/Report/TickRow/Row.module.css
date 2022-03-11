@@ -1,5 +1,5 @@
 .domain {
-  width: 25%;
+  flex: 1;
   display: inline-block;
   margin-bottom: 2vh;
 }

@@ -1,13 +1,13 @@
-.container{
+.container {
   margin-top: 1vh;
-  padding: 0 5.8vh;
+  padding: 5vh 8vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.cont{
+.cont {
   width: 100%;
   padding: 1vh 0;
   display: flex;
@@ -16,75 +16,74 @@
   justify-content: center;
 }
 
-.con{
+.con {
   width: 100%;
   margin: 1vh 0;
   padding: 1vh 0;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content:space-around;
+  justify-content: space-around;
 }
 
-.heading{
+.heading {
   color: #0415aa;
   padding-bottom: 1vh;
   text-align: center;
 }
 
-.headingred{
+.headingred {
   display: inline;
-  color: #ED2F2F;
+  color: #ed2f2f;
   margin-bottom: 1vh;
 }
 
-.headingblue{
+.headingblue {
   display: inline;
   color: #0415aa;
   margin-bottom: 1vh;
 }
 
-.headingnormal{
+.headingnormal {
   display: inline;
   margin-bottom: 1vh;
 }
 
-.step{
+.step {
   color: #737485;
   font-size: 2vh;
   padding: 0.5vh 0;
 }
 
-.step span{
-  color: #ED2F2F;
+.step span {
+  color: #ed2f2f;
 }
 
-.stepb{
+.stepb {
   color: #737485;
-  font-size: 2vh;
+  font-size: 2.2vh;
   padding: 0.5vh 0;
 }
 
-.stepb span{
+.stepb span {
   color: #0415aa;
 }
 
-
-.step div{
+.step div {
   color: #0415aa;
 }
 
-.gif{
+.gif {
   height: 70vh;
   width: auto;
 }
 
-.details{
+.details {
   width: 45%;
 }
 
-.headingparah{
+.headingparah {
   font-size: 2.7vh;
   padding-bottom: 2vh;
-  color: #323C47;
+  color: #323c47;
 }
