@@ -5,12 +5,14 @@ import Dashboard from "./components/Screens/Dashboard/Dashboard";
 import Analytics from "./components/Screens/Analytics/Analytics";
 import Login from "./components/Screens/Login/Login";
 import EmailBlacklistAndDNS from "./components/Screens/EmailBlacklistAndDNS/EmailBlacklistAndDNS";
+import Error from "./components/Screens/Error/Error";
 
 function App() {
-  return <Login/>
+  return (
+    <div className={classes.container}>
+      <Dashboard />
+    </div>
+  );
 }
 
 export default App;
-(<div className={classes.container}>
-  <Login/>
-</div>)

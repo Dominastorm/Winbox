@@ -7,7 +7,7 @@
 }
 
 .sidebar{
-  width: 60px;
+  width: 70px;
   height: 95vh;
   padding-right: 6px;
   padding-left: 1.2vw;
@@ -19,5 +19,5 @@
   flex: 1;
   justify-content: space-between;
   height: 95vh;
-  padding-right: 1.2vw;
+  margin-right: 1.2vw;
 }

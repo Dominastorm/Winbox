@@ -4,6 +4,7 @@ import Link from "./Link";
 import User from "./Tabs/User/User";
 
 const Data = () => {
+  const [selected,setSelected]
   return (
     <>
       <Card className={classes.background}>

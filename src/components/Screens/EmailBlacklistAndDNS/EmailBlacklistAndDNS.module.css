@@ -1,24 +1,23 @@
-.container{
-  display:flex;
+.container {
+  display: flex;
   flex-direction: row;
   justify-content: center;
   padding: 2.5vh 0;
   width: 100vw;
 }
 
-.sidebar{
-  width: 60px;
+.sidebar {
+  width: 70px;
   height: 95vh;
   padding-right: 6px;
   padding-left: 1.2vw;
 }
 
-.main{
-  display:flex;
+.main {
+  display: flex;
   flex-direction: column;
   flex: 1;
   justify-content: flex-start;
   height: 95vh;
-  padding-right:1.2vw;
-
+  margin-right: 1.2vw;
 }

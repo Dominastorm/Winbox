@@ -1,9 +1,16 @@
-
+.modalClass{
+  width: 30vw;
+}
 
 .parah {
   font-weight: 400;
   font-size: 1.6vh;
   color: #707683;
+  text-align: center;
+}
+
+.heading{
+  text-align: center;
 }
 
 .head{
@@ -30,5 +37,5 @@
   align-items: center;
 }
 .buttons div{
-  padding: 0 3vh;
+  padding: 1vh 2vw 2vh 2vw;
 }

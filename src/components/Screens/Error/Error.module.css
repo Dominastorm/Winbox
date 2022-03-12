@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 2.5vh 0;
+  width: 100vw;
+}
+
+.sidebar {
+  width: 70px;
+  height: 95vh;
+  padding-right: 6px;
+  padding-left: 1.2vw;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: flex-start;
+  height: 95vh;
+  padding-right: 1.2vw;
+}
+
+.background{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.herotext{
+  color: #0415AA;
+  font-size: 20vh;
+  font-weight: 600;
+  margin-bottom: 4vh;
+}
+
+.heading{
+  margin-top: 8vh;
+}
+
+.parah{
+  margin: 1vh 0 3vh 0;
+  text-align: center;
+  font-size: 1.64vh;
+  color: #707683;
+}
