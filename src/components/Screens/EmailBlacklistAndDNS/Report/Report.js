@@ -1,7 +1,7 @@
 import classes from "./Report.module.css";
 import Card from "../../../UI/Card/Card";
 import Header from "../../../Elements/Headerahb/Header";
-import Drive from "./Drive";
+import Drive from "../../../Elements/DivIHPb/DivIHPb";
 import MessageIcon from "./Icons/MessageIcon";
 import ScoreIcon from "./Icons/ScoreIcon";
 import Heading, { Heading186 } from "../../../UI/Heading/Heading";
@@ -21,7 +21,7 @@ const Report = (props) => {
           <ScoreIcon />
         </Drive>
         <Drive
-          heading="Want to increase your deliverability?"
+          heading="Want to increase your deliverability"
           parah="Start to warm-up inbox"
           buttontext="Start"
         >

@@ -1,11 +1,11 @@
-import classes from "./Drive.module.css";
-import Card from "../../../UI/Card/Card";
-import {Heading186} from "../../../UI/Heading/Heading";
+import classes from "./DivIHPb.module.css";
+import Card from "../../UI/Card/Card";
+import {Heading186} from "../../UI/Heading/Heading";
 
 const Drive = (props) => {
   return (
     <>
-      <Card className={`${props.className}  ${classes.flex} `}>
+      <Card className={`${classes.flex} ${props.className}   `}>
           <div className={classes.flexstart}>
             <div>{props.children}</div>
             <div>

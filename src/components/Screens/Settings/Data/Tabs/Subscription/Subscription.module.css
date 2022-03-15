@@ -1,0 +1,32 @@
+.flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1vh;
+}
+
+.flexcont {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1vh;
+  padding: 1vh 0.5vw;
+}
+
+.blockwm{
+  margin-right: 0.5vw;
+  height: 14vh !important;
+}
+
+.block{
+  height: 14vh !important;
+}
+
+.list{
+  color: #707683;
+  font-size: 1.64vh;
+  margin-bottom: 5vh;
+  width: 80%;
+}

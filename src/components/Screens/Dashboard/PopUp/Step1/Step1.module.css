@@ -2,9 +2,12 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 1vh 0;
+  margin: 1vh 0;
 }
 
+.heading{
+  margin-bottom: 2vh;
+}
 
 .btnsize {
   width: 49%;

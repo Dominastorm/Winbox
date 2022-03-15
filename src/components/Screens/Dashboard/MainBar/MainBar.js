@@ -8,25 +8,24 @@ import TableImage from "../../../Icons/TableImage";
 import classes from "./MainBar.module.css"
 
 const MainBar = (props) => {
-  //  const data = [];
+  const data = [];
 
-  const data = [
-    {
-      inbox: "emailofuser@gmail.com",
-      sentToday: "1/1",
-      created: "January 1, 2022",
-      status: "Started",
-      complete: "false"
-    },
-    {
-      inbox: "emailofuser@gmail.com",
-      sentToday: "1/1",
-      created: "January 1, 2022",
-      status: "Completed",
-      complete: "true"
-    },
-
-  ];
+  // const data = [
+  //   {
+  //     inbox: "emailofuser@gmail.com",
+  //     sentToday: "1/1",
+  //     created: "January 1, 2022",
+  //     status: "Started",
+  //     complete: "false"
+  //   },
+  //   {
+  //     inbox: "emailofuser@gmail.com",
+  //     sentToday: "1/1",
+  //     created: "January 1, 2022",
+  //     status: "Completed",
+  //     complete: "true"
+  //   },
+  // ];
 
   const table = data.map((rowdetail) => (
     <Row

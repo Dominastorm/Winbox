@@ -14,7 +14,7 @@ const EmailBlacklistAndDNS = () => {
         <Sidebar />
       </div>
       <div className={classes.main}>
-        <MainBar/>
+        <Report/>
       </div>
     </div>
     </>

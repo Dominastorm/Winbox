@@ -14,10 +14,7 @@
 }
 
 .main{
-  display:flex;
-  flex-direction: column;
   flex: 1;
-  justify-content: flex-start;
   height: 95vh;
   padding-right: 1.2vw
 }

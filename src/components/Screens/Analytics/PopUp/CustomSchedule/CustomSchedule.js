@@ -1,6 +1,6 @@
 import classes from "./CustomSchedule.module.css";
 import Modal from "../../../../UI/Modal/Modal";
-import Heading from "../../../Dashboard/PopUp/Elements/Heading";
+import Heading from "../../../../Elements/PopUpElements/Heading";
 import Button from "../../../../UI/Button/Button";
 
 const Step2 = () => {

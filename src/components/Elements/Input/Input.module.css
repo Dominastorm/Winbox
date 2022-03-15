@@ -1,30 +1,29 @@
-.container{
+.container {
   padding: 1vh 0;
 }
 
-.parah{
+.parah {
   font-size: 1.41vh;
   color: #707683;
   display: inline;
 }
 
-.asterik{
+.asterik {
   font-size: 1.41vh;
-  color: #DE5246;
+  color: #de5246;
   display: inline;
 }
 
-.input{
+.input {
   margin: 0.5vh 0 0 0;
-  border: 1.5px solid #EBEFF2;;
+  border: 1.5px solid #ebeff2;
   padding: 1.5vh 1vw;
   border-radius: 0.5vh;
   width: 70%;
-
 }
 
 .input::placeholder {
   font-size: 1.88vh;
-  color: #323C47;
+  color: #323c47;
   font-weight: 400;
 }

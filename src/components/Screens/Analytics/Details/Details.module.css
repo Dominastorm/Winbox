@@ -1,5 +1,4 @@
 .flex {
-  height: 15vh;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -7,6 +6,6 @@
   margin-top: 1vh;
 }
 
-.block{
-  flex: 1;
+.margin{
+  margin-right: 0.5vw;
 }

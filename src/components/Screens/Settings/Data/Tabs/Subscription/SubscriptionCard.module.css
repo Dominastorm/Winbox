@@ -1,0 +1,35 @@
+.container {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 2vh;
+  margin: 2vh 0.5vw;
+  padding: 4vh 3vw;
+  border: 1px solid #ebeff2;
+}
+
+.flexRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items:baseline;
+  margin: 3vh 0 2vh 0;
+}
+
+.dollarSign{
+  color: #91929E;
+  font-size: 3.27vh;
+  margin: 0 0.5vw 0 0;
+  font-weight: 100;
+}
+
+.amount {
+  color: #041186;
+  font-size: 6.5vh;
+}
+
+.subheading {
+  color: #041186;
+}

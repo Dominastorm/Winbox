@@ -7,7 +7,7 @@ const Link = (props) => {
       <p className={classes.parah}>{props.children}</p>
       {props.required && <p className={classes.asterik}>*</p>}
       </div>
-      <input className={classes.input} placeholder={props.children}/>
+      <input className={`${props.className}  ${classes.input} `} placeholder={props.children}/>
     </div>
   );
 };

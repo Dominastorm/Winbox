@@ -1,11 +1,11 @@
 import classes from "./Step2.module.css";
 import Modal from "../../../../UI/Modal/Modal";
-import Heading from "../Elements/Heading";
-import Heading2 from "../Elements/Heading2";
+import Heading from "../../../../Elements/PopUpElements/Heading";
+import Heading2 from "../../../../UI/Heading/Heading";
 import Button from "../../../../UI/Button/Button";
 import BlueButton from "../../../../UI/BlueButton/Button";
 import RedButton from "../../../../UI/RedButton/Button";
-import GoogleIcon from "../Elements/GoogleIcon";
+import GoogleIcon from "../../../../Elements/PopUpElements/GoogleIcon";
 import Input from "../../../../Elements/Input/Input";
 
 const Step2 = () => {

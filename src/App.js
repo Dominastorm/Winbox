@@ -10,7 +10,7 @@ import Error from "./components/Screens/Error/Error";
 function App() {
   return (
     <div className={classes.container}>
-      <Dashboard />
+      <Settings />
     </div>
   );
 }
