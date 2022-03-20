@@ -24,6 +24,7 @@ const Report = (props) => {
           heading="Want to increase your deliverability"
           parah="Start to warm-up inbox"
           buttontext="Start"
+          className={classes.nomargin}
         >
           <MessageIcon />
         </Drive>

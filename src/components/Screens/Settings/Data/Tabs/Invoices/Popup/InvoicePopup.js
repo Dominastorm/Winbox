@@ -18,10 +18,10 @@ const Row = (props) => {
 
 const Logout = (props) => {
   return (
-    <Modal modalClass={classes.modalClass}>
+    <Modal modalClass={classes.modalClass} onClick={props.hidePopUp}>
       <div className={classes.flexend}>
         <div>
-          <DelIcon />
+          <DelIcon onClick={props.hidePopUp}/>
         </div>
       </div>
       <div className={classes.flexcentercolumn}>

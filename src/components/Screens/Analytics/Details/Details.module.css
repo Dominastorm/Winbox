@@ -4,8 +4,14 @@
   align-items: center;
   justify-content: space-between;
   margin-top: 1vh;
+  height: 14vh;
 }
 
 .margin{
   margin-right: 0.5vw;
+  flex: 1;
+}
+
+.nomargin{
+  flex:1;
 }

@@ -1,7 +1,8 @@
-import classes from "./Invoices.module.css"
+import React from "react";
+import classes from "./Invoices.module.css";
 import Details from "./Details/Details";
 import Row from "./Row/Row";
-import InvoicePopup from "./Popup/InvoicePopup"
+import InvoicePopup from "./Popup/InvoicePopup";
 
 const data = [
   {
@@ -20,21 +21,32 @@ const data = [
   },
 ];
 
-const table = data.map((rowdetail) => (
-  <Row
-    date={rowdetail.date}
-    amount={rowdetail.amount}
-    details={rowdetail.details}
-    status={rowdetail.status}
-    complete={rowdetail.complete}
-  />
-));
-
 const Invoices = () => {
+  const [showPopUp, setShowPopUp] = React.useState(0);
+
+  const openPopUp = () => {
+    setShowPopUp(1);
+  };
+
+  const hidePopUp = () => {
+    setShowPopUp(0);
+  };
+
+  const table = data.map((rowdetail) => (
+    <Row
+      date={rowdetail.date}
+      amount={rowdetail.amount}
+      details={rowdetail.details}
+      status={rowdetail.status}
+      complete={rowdetail.complete}
+      openPopUp={openPopUp}
+    />
+  ));
+
   return (
     <>
-    <InvoicePopup/>
-      <Details />
+      {showPopUp ? <InvoicePopup hidePopUp={hidePopUp}/> : undefined}
+      <Details/>
       <ul className={classes.table}>{table}</ul>
     </>
   );

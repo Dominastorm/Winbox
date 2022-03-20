@@ -9,7 +9,7 @@ import TimerIcon from "./Icons/TimerIcon";
 import SubscriptionCard from "./SubscriptionCard";
 
 const Subscription = (props) => {
-  const Subscribed = 1;
+  const Subscribed = 0;
 
   return (
     <>
@@ -44,6 +44,7 @@ const Subscription = (props) => {
         <BlockIHP
           heading="Subscription Plans"
           parah="We have extremely transparent plans"
+          className={classes.block}
         >
           <SubscriptionIcon />
         </BlockIHP>

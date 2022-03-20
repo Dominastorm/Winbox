@@ -2,7 +2,7 @@ import classes from "./Details.module.css";
 import Card from "../../../../../../UI/Card/Card";
 import ColHead from "./ColHead"
 
-const Details = () => {
+const Details = (props) => {
   return (
     <Card className={classes.background}>
       <ColHead className={classes.head}>Date</ColHead>

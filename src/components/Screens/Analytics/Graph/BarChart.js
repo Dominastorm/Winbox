@@ -162,7 +162,6 @@ export default function App() {
               },
               beginAtZero: true,
               maxTicksLimit: 6,
-              padding: 20,
             },
           },
         },

@@ -1,7 +1,7 @@
 const QuestionIcon = () => {
   return (
     <svg
-      width="40%"
+      width = "18px"
       height="auto"
       viewBox="0 0 24 24"
       fill="none"

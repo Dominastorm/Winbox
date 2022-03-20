@@ -1,3 +1,4 @@
+import React from "react";
 import classes from "./Step3.module.css";
 import Modal from "../../../../UI/Modal/Modal";
 import Heading from "../../../../Elements/PopUpElements/Heading";
@@ -10,8 +11,15 @@ import CustomChart from "./Icons/CustomChart";
 import FlatChart from "./Icons/FlatChart";
 import ProgressiveChart from "./Icons/ProgressiveChart";
 import RandomizedChart from "./Icons/RandomizedChart";
+import BarChart from "./BarChart";
 
 const Step2 = () => {
+  const [selected, setSelected] = React.useState(1);
+
+  const select = (event) => {
+    setSelected(event.currentTarget.value);
+  };
+
   return (
     <Modal modalClass={classes.background}>
       <Heading step="Step 3 - ">Warm-up options</Heading>
@@ -24,7 +32,9 @@ const Step2 = () => {
           heading="Grow Progressive"
           parah="Most recommended"
           logoClass={classes.btnlogo}
-          btnClass={classes.selected}
+          btnClass={selected == 1 ? classes.selected : classes.notselected}
+          onClick={select}
+          value={1}
         >
           <ProgressiveChart />
         </Button2>
@@ -33,7 +43,9 @@ const Step2 = () => {
           heading="Flat"
           parah="For specific need"
           logoClass={classes.btnlogo}
-          btnClass={classes.notselected}
+          btnClass={selected == 2 ? classes.selected : classes.notselected}
+          onClick={select}
+          value={2}
         >
           <FlatChart />
         </Button2>
@@ -42,7 +54,9 @@ const Step2 = () => {
           heading="Randomized"
           parah="For experimentation"
           logoClass={classes.btnlogo}
-          btnClass={classes.notselected}
+          btnClass={selected == 3 ? classes.selected : classes.notselected}
+          onClick={select}
+          value={3}
         >
           <RandomizedChart />
         </Button2>
@@ -51,7 +65,9 @@ const Step2 = () => {
           heading="Custom"
           parah="For cold email experts"
           logoClass={classes.btnlogo}
-          btnClass={classes.notselected}
+          btnClass={selected == 4 ? classes.selected : classes.notselected}
+          onClick={select}
+          value={4}
         >
           <CustomChart />
         </Button2>
@@ -61,17 +77,31 @@ const Step2 = () => {
           <Input className={classes.input} required="true">
             Warm-up timing range
           </Input>
+          <p className={classes.parah}>
+            45 days min recom. <div>(always warm-up)</div>
+          </p>
         </div>
         <div className={classes.inputcont}>
           <Input className={classes.input} required="true">
             Maximum email sent/day
           </Input>
+          <p className={classes.parah}>
+            40 recommended, 210 max <div>(sending limit)</div>
+          </p>
         </div>
         <div className={classes.inputcont}>
           <Input className={classes.input} required="true">
             Reply rate/day, %
           </Input>
+          <p className={classes.parah}>
+            30% recom., 45% max <div>(reply rate limit)</div>
+          </p>
         </div>
+      </div>
+      <div className={classes.barchart}>
+        <React.StrictMode>
+          <BarChart />
+        </React.StrictMode>
       </div>
       <div className={classes.flexspacebetween}>
         <BlueButton>Previous</BlueButton>

@@ -1,5 +1,46 @@
 .container{
   background: #f5f6f8;
-  width: 100vw;
-  height: 100vh;
+  top: 0;
+  height: 100%;
+  position: sticky;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 2.5vh 0;
+}
+
+.sidebar{
+  width: 75px;
+  height: 95vh;
+  top:2.5vh;
+  padding-right: 6px;
+  padding-left: 1.2vw;
+  position: sticky;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 1;
+  padding-right: 1.2vw
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0415AA;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #041186;
 }

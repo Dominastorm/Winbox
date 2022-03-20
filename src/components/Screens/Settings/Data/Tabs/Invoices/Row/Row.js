@@ -26,7 +26,7 @@ const Row = (props) => {
         </div>
       </div>
       <div className={classes.head}>
-        <Button className={classes.button}>Open</Button>
+        <Button className={classes.button} onClick={props.openPopUp}>Open</Button>
       </div>
     </Card>
   );

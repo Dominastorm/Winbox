@@ -4,22 +4,15 @@ import Details from "./Details/Details";
 import Table from "./Table/Table";
 import Header from "../../Elements/Headerahb/Header";
 import CustomSchedule from "./PopUp/CustomSchedule/CustomSchedule";
-import classes from "./Analytics.module.css";
 
 const Analytics = () => {
+  console.log(1);
   return (
     <>
-      <div className={classes.container}>
-        <div className={classes.sidebar}>
-          <Sidebar />
-        </div>
-        <div className={classes.main}>
-          <Header parah="useremail@gmail.com" buttontext="Add new inbox" />
-          <Details />
-          <Graph />
-          <Table />
-        </div>
-      </div>
+      <Header parah="useremail@gmail.com" buttontext="Add new inbox" />
+      <Details />
+      <Graph />
+      <Table />
     </>
   );
 };

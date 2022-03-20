@@ -11,7 +11,7 @@ const Details = () => {
       <Block className={classes.margin} heading="2" parah="Emails sent"><EmailsIcon/></Block>
       <Block className={classes.margin} heading="2" parah="Interactions"><InteractionsIcon/></Block>
       <Block className={classes.margin} heading="2" parah="Replies"><RepliedIcon/></Block>
-      <Block heading="2" parah="Spam Rate"><SpamrateIcon/></Block>
+      <Block className={classes.nomargin} heading="2" parah="Spam Rate"><SpamrateIcon/></Block>
     </div>
   );
 };
