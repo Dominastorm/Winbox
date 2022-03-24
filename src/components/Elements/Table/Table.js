@@ -3,6 +3,7 @@ import Card from "../../UI/Card/Card";
 import Button from "../../UI/Button/Button";
 
 const Table = (props) => {
+  console.log(props.onClick);
   return (
     <Card className={classes.background}>
       <div>{props.children} </div>
@@ -17,7 +18,7 @@ const Table = (props) => {
         </p>
       </div>
       <div>
-        <Button className={classes.btn}>{props.buttontext}</Button>
+        <Button className={classes.btn} onClick={props.onClick} value={props.value}>{props.buttontext}</Button>
       </div>
     </Card>
   );

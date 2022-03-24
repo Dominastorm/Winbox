@@ -3,7 +3,6 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin-top: 1vh;
 }
 
 .flexcont {
@@ -18,10 +17,12 @@
 .blockwm{
   margin-right: 0.5vw;
   height: 13vh !important;
+  flex: 1;
 }
 
 .block{
   height: 13vh !important;
+  flex: 1;
 }
 
 .list{

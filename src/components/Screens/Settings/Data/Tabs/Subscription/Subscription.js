@@ -9,7 +9,7 @@ import TimerIcon from "./Icons/TimerIcon";
 import SubscriptionCard from "./SubscriptionCard";
 
 const Subscription = (props) => {
-  const Subscribed = 0;
+  const Subscribed = 1;
 
   return (
     <>

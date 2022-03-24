@@ -7,38 +7,38 @@ import TableImage from "../Images/TableImage";
 import Row from "../Row/Row";
 
 const MainBar = (props) => {
-  //  const data = [];
+   const data = [];
 
-  const data = [
-    {
-      inbox: "Awaiting email...",
-      subject: "-",
-      score: "-",
-      created: "January 1, 2022",
-      status: "Pending",
-    },
-    {
-      inbox: "Awaiting email...",
-      subject: "-",
-      score: "-",
-      created: "January 1, 2022",
-      status: "Pending",
-    },
-    {
-      inbox: "Awaiting email...",
-      subject: "-",
-      score: "-",
-      created: "January 1, 2022",
-      status: "Pending",
-    },
-    {
-      inbox: "Awaiting email...",
-      subject: "-",
-      score: "-",
-      created: "January 1, 2022",
-      status: "Pending",
-    },
-  ];
+  // const data = [
+  //   {
+  //     inbox: "Awaiting email...",
+  //     subject: "-",
+  //     score: "-",
+  //     created: "January 1, 2022",
+  //     status: "Pending",
+  //   },
+  //   {
+  //     inbox: "Awaiting email...",
+  //     subject: "-",
+  //     score: "-",
+  //     created: "January 1, 2022",
+  //     status: "Pending",
+  //   },
+  //   {
+  //     inbox: "Awaiting email...",
+  //     subject: "-",
+  //     score: "-",
+  //     created: "January 1, 2022",
+  //     status: "Pending",
+  //   },
+  //   {
+  //     inbox: "Awaiting email...",
+  //     subject: "-",
+  //     score: "-",
+  //     created: "January 1, 2022",
+  //     status: "Pending",
+  //   },
+  // ];
 
   const table = data.map((rowdetail) => (
     <Row

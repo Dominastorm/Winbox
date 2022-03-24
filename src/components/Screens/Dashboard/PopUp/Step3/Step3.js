@@ -12,15 +12,24 @@ import FlatChart from "./Icons/FlatChart";
 import ProgressiveChart from "./Icons/ProgressiveChart";
 import RandomizedChart from "./Icons/RandomizedChart";
 import BarChart from "./BarChart";
+import InputDate from "./InputDate";
+import CalenderPopUp from "./CalenderPopUp.js"
 
 const Step2 = () => {
   const [selected, setSelected] = React.useState(1);
+  const [showPopUp, setShowPopUp] = React.useState(0);
 
   const select = (event) => {
     setSelected(event.currentTarget.value);
   };
 
+  const togglePopUp = () => {
+    setShowPopUp(!showPopUp);
+  }
+
   return (
+    <>
+    {showPopUp && <CalenderPopUp onClick={togglePopUp}/>}
     <Modal modalClass={classes.background}>
       <Heading step="Step 3 - ">Warm-up options</Heading>
       <Heading186 className={classes.font14}>
@@ -74,9 +83,7 @@ const Step2 = () => {
       </div>
       <div className={classes.flex}>
         <div className={classes.inputcont}>
-          <Input className={classes.input} required="true">
-            Warm-up timing range
-          </Input>
+          <InputDate onClick={togglePopUp}/>
           <p className={classes.parah}>
             45 days min recom. <div>(always warm-up)</div>
           </p>
@@ -108,6 +115,7 @@ const Step2 = () => {
         <Button>Next</Button>
       </div>
     </Modal>
+  </>
   );
 };
 

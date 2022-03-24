@@ -5,8 +5,9 @@ const DelIcon = (props) => {
       height="2.12vh"
       viewBox="0 0 24 24"
       fill="none"
-      style={{cursor:"pointer"}}
+      style={{ cursor: "pointer" }}
       onClick={props.onClick}
+      value={props.value}
       xmlns="http://www.w3.org/2000/svg"
     >
       <circle cx="12" cy="12" r="9" stroke="#109CF1" stroke-width="2" />

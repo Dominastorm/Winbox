@@ -8,6 +8,7 @@ const Button = (props) => {
       className={`${props.className} || ${classes.bluebutton} `}
       onClick={props.onClick}
       disabled={props.disabled}
+      value={props.value}
     >
       {props.children}
     </button>

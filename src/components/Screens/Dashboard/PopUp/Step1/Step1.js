@@ -8,16 +8,16 @@ import EmailIcon from "./EmailIcon";
 import Heading from "../../../../Elements/PopUpElements/Heading";
 import Heading2 from "../../../../UI/Heading/Heading";
 
-const Step1 = () => {
-  const [selected, setSelected] = React.useState(0);
-
-  const select = (event) => {
-    setSelected(event.currentTarget.value);
-  };
-
+const Step1 = (props) => {
   return (
-    <Modal>
-      <Heading step="Step 1 - ">Choose Inbox provider</Heading>
+    <Modal onClick={props.close.function} value={props.close.value}>
+      <Heading
+        step="Step 1 - "
+        onClick={props.close.function}
+        value={props.close.value}
+      >
+        Choose Inbox provider
+      </Heading>
       <Heading2 className={classes.heading}>
         Select the provider of the inbox you want to warm-up
       </Heading2>
@@ -27,8 +27,8 @@ const Step1 = () => {
           heading="Gmail Gsuite"
           parah="Google Inbox"
           logoClass={classes.btnlogo}
-          btnClass={selected == 0 ? classes.selected : classes.notselected}
-          onClick={select}
+          btnClass={props.selectedInbox == 0 ? classes.selected : classes.notselected}
+          onClick={props.select}
           value={0}
         >
           <GoogleIcon />
@@ -38,15 +38,21 @@ const Step1 = () => {
           heading="Others"
           parah="Add with SMTPs"
           logoClass={classes.btnlogo}
-          btnClass={selected == 1 ? classes.selected : classes.notselected}
-          onClick={select}
+          btnClass={props.selectedInbox == 1 ? classes.selected : classes.notselected}
+          onClick={props.select}
           value={1}
         >
           <EmailIcon />
         </Button2>
       </div>
       <div className={classes.flexend}>
-        <Button className={classes.btn}>Next</Button>
+        <Button
+          className={classes.btn}
+          onClick={props.next.function}
+          value={props.next.value}
+        >
+          Next
+        </Button>
       </div>
     </Modal>
   );

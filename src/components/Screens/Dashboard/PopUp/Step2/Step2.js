@@ -8,7 +8,7 @@ import RedButton from "../../../../UI/RedButton/Button";
 import GoogleIcon from "../../../../Elements/PopUpElements/GoogleIcon";
 import Input from "../../../../Elements/Input/Input";
 
-const GoogleLogIn = () => {
+const GoogleLogIn = (props) => {
   return (
     <>
       <form>
@@ -18,10 +18,6 @@ const GoogleLogIn = () => {
           <p className={classes.buttonparah}>Sign in with Google</p>
         </RedButton>
       </form>
-      <div className={classes.flexspacebetween}>
-        <BlueButton>Previous</BlueButton>
-        <Button>Next</Button>
-      </div>
     </>
   );
 };
@@ -57,22 +53,27 @@ const SMTPLogin = () => {
           <p className={classes.buttonparah}>Check Connection</p>
         </RedButton>
       </form>
-      <div className={classes.flexspacebetween}>
-        <BlueButton>Previous</BlueButton>
-        <Button>Next</Button>
-      </div>
+
     </>
   );
 };
 
-const Step2 = () => {
-  const LoginType = 1;
-
+const Step2 = (props) => {
   return (
-    <Modal>
-      <Heading step="Step 2 - ">Connect your inbox</Heading>
+    <Modal onClick={props.close.function} value={props.close.value}>
+      <Heading
+        step="Step 2 - "
+        onClick={props.close.function}
+        value={props.close.value}
+      >
+        Connect your inbox
+      </Heading>
       <Heading2>Select the provider of the inbox you want to warm-up</Heading2>
-      {LoginType == 0 ? <GoogleLogIn /> : <SMTPLogin />}
+      {props.inboxProvider == 0 ? <GoogleLogIn /> : <SMTPLogin />}
+      <div className={classes.flexspacebetween}>
+        <BlueButton onClick={props.prev.function} value={props.prev.value}>Previous</BlueButton>
+        <Button>Next</Button>
+      </div>
     </Modal>
   );
 };

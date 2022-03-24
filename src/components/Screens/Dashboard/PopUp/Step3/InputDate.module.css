@@ -1,0 +1,36 @@
+.container {
+  padding: 1vh 0 1vh 0;
+}
+
+.parah {
+  font-size: 1.41vh;
+  color: #707683;
+  display: inline;
+}
+
+.asterik {
+  font-size: 1.41vh;
+  color: #de5246;
+  display: inline;
+}
+
+.button {
+  margin: 0.5vh 0 0 0;
+  height: 6vh;
+  border: 1.5px solid #ebeff2;
+  border-radius: 0.5vh;
+  background: none;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.buttonparah {
+  font-size: 1.88vh;
+  color: #323c47;
+  font-weight: 400;
+  width: 60%;
+  text-align: left;
+  margin-left: 5%;
+}
