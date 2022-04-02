@@ -4,12 +4,13 @@ import Details from "./Details/Details";
 import Table from "./Table/Table";
 import Header from "../../Elements/Headerahb/Header";
 import CustomSchedule from "./PopUp/CustomSchedule/CustomSchedule";
+import HeroHeader from "../../Elements/Header/Header";
 
-const Analytics = () => {
-  console.log(1);
+const Analytics = (props) => {
   return (
     <>
-      <Header parah="useremail@gmail.com" buttontext="Add new inbox" />
+      <HeroHeader />
+      <Header parah="useremail@gmail.com" goBack={props.renderMainPage} />
       <Details />
       <Graph />
       <Table />

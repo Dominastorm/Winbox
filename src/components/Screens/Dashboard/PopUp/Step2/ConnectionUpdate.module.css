@@ -1,0 +1,12 @@
+.modalClass{
+  z-index: 40;
+  width:50vw;
+  height: 55vh;
+  padding: 1vh 1vw;
+  min-width: 400px;
+  min-height: 380px;
+}
+
+.backdropClass{
+  z-index: 30;
+}

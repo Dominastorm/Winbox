@@ -19,7 +19,10 @@ const Row = (props) => {
       <p className={classes.head}>{props.sentToday}</p>
       <p className={classes.head}>{props.created}</p>
       <div className={classes.head}>
-        <div className={classes.status} style={props.complete=="true" ? orange : green}>
+        <div
+          className={classes.status}
+          style={props.complete == "true" ? orange : green}
+        >
           <p>{props.status}</p>
         </div>
       </div>
@@ -28,8 +31,12 @@ const Row = (props) => {
           <input type="checkbox" />
           <span className={classes.slider}></span>
         </label>
-        <ChartIcon />
-        <DeleteIcon />
+        <button className={classes.button} onClick={props.renderAnalysis} >
+          <ChartIcon />
+        </button>
+        <button className={classes.button} onClick={props.DeleteCampaignPopUp.function} value="4">
+          <DeleteIcon />
+        </button>
       </div>
     </Card>
   );

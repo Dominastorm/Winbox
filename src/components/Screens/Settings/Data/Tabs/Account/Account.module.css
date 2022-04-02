@@ -1,0 +1,21 @@
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.background{
+  flex: 1;
+  padding: 2vh;
+  margin:0 1vh 1vh 0;
+  height: 20vh;
+}
+
+.button{
+  width: 45% !important;
+  margin-top: 3vh;
+  background: #FFFFFF;
+  border: 2px solid #EBEFF2;
+  box-sizing: border-box;
+  border-radius: 8px;
+}

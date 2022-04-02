@@ -21,10 +21,10 @@ function App() {
         <Sidebar renderPage={renderPage} selectedPage={selectedPage} />
       </div>
       <div className={classes.main}>
-        {selectedPage == 1 && <Dashboard />}
-        {selectedPage == 2 && <EmailBlacklistAndDNS />}
-        {selectedPage == 3 && <Analytics />}
-        {selectedPage == 4 && <Settings />}
+          {selectedPage == 1 && <Dashboard />}
+          {selectedPage == 2 && <EmailBlacklistAndDNS />}
+          {selectedPage == 3 && <Analytics />}
+          {selectedPage == 4 && <Settings />}
       </div>
     </div>
   );

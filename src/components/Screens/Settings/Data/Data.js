@@ -3,6 +3,7 @@ import classes from "./Data.module.css";
 import Card from "../../../UI/Card/Card";
 import Link from "./Link";
 import User from "./Tabs/User/User";
+import Account from "./Tabs/Account/Account";
 import Subscription from "./Tabs/Subscription/Subscription"
 import Invoices from "./Tabs/Invoices/Invoices";
 
@@ -46,7 +47,7 @@ const Data = () => {
         </Link>
       </Card>
       {selected === 1 && <User />}
-      {selected === 2 && <User />}
+      {selected === 2 && <Account />}
       {selected === 3 && <Subscription />}
       {selected === 4 && <Invoices />}
     </>

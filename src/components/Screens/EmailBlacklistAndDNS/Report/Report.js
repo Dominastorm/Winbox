@@ -1,3 +1,4 @@
+import React from "react";
 import classes from "./Report.module.css";
 import Card from "../../../UI/Card/Card";
 import Header from "../../../Elements/Headerahb/Header";
@@ -7,11 +8,29 @@ import ScoreIcon from "./Icons/ScoreIcon";
 import Heading, { Heading186 } from "../../../UI/Heading/Heading";
 import DropdownIcon from "../../../Icons/DropdownIcon";
 import Row from "./TickRow/Row";
+import LinkCopiedPopUp from "../Popups/LinkCopiedPopUp";
 
 const Report = (props) => {
+  const [showPopUp, setShowPopUp] = React.useState("0");
+
+  const closePopUp = () => {
+    setShowPopUp("0");
+  };
+
+  const renderPopUp = () => {
+    setShowPopUp("1");
+    setTimeout(closePopUp, 1500);
+  };
+
   return (
     <>
-      <Header parah="useremail@gmail.com" buttontext="Add new inbox" />
+      {showPopUp=="1" && <LinkCopiedPopUp />}
+      <Header
+        parah="useremail@gmail.com"
+        buttontext="Share my Report"
+        goBack={props.renderMainPage}
+        buttonOnClick={renderPopUp}
+      />
       <div className={classes.flexhero}>
         <Drive
           heading="83/100"

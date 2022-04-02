@@ -15,7 +15,7 @@ const Row = (props) => {
       <Col className={classes.head}>{props.sent}</Col>
       <Col className={classes.head}>
         <DeleteIcon />
-        <EditIcon />
+        {/*<EditIcon />*/}
       </Col>
     </Card>
   );

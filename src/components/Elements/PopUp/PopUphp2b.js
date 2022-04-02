@@ -7,10 +7,10 @@ import { Heading186 } from "../../UI/Heading/Heading";
 
 const Logout = (props) => {
   return (
-    <Modal modalClass={classes.modalClass}>
+    <Modal modalClass={classes.modalClass} onClick={props.close.function} value={props.close.value}>
       <div className={classes.head}>
         <div>
-          <DelIcon />
+          <DelIcon onClick={props.close.function} value={props.close.value}/>
         </div>
       </div>
       <div className={classes.tail}>
@@ -22,7 +22,7 @@ const Logout = (props) => {
         </div>
         <div className={classes.buttons}>
           <div>
-            <BlueButton className={classes.bluebutton}>No</BlueButton>
+            <BlueButton className={classes.bluebutton} onClick={props.close.function} value={props.close.value}>No</BlueButton>
           </div>
           <div>
             <RedButton className={classes.redbutton}>Yes</RedButton>

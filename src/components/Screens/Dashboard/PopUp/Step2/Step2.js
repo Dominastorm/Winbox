@@ -22,7 +22,7 @@ const GoogleLogIn = (props) => {
   );
 };
 
-const SMTPLogin = () => {
+const SMTPLogin = (props) => {
   return (
     <>
       <form>
@@ -49,7 +49,7 @@ const SMTPLogin = () => {
             SMTP Protocol
           </Input>
         </div>
-        <RedButton className={classes.redbutton}>
+        <RedButton className={classes.redbutton} onClick={props.onClick}>
           <p className={classes.buttonparah}>Check Connection</p>
         </RedButton>
       </form>
@@ -69,10 +69,10 @@ const Step2 = (props) => {
         Connect your inbox
       </Heading>
       <Heading2>Select the provider of the inbox you want to warm-up</Heading2>
-      {props.inboxProvider == 0 ? <GoogleLogIn /> : <SMTPLogin />}
+      {props.inboxProvider == 0 ? <GoogleLogIn /> : <SMTPLogin onClick={props.func}/>}
       <div className={classes.flexspacebetween}>
         <BlueButton onClick={props.prev.function} value={props.prev.value}>Previous</BlueButton>
-        <Button>Next</Button>
+        <Button onClick={props.next.function} value={props.next.value}>Finish</Button>
       </div>
     </Modal>
   );

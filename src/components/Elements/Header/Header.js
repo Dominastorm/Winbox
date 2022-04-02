@@ -1,6 +1,6 @@
 import classes from "./Header.module.css";
-import Card from "../../../UI/Card/Card";
-import Logo from "../../../Icons/Logo";
+import Card from "../../UI/Card/Card";
+import Logo from "../../Icons/Logo";
 import NotifIcon from "./NotifIcon";
 
 const Header = () => {

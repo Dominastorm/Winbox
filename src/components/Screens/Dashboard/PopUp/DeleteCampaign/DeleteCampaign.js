@@ -1,9 +1,9 @@
 import PopUphp2b from "../../../../Elements/PopUp/PopUphp2b";
 
-const Logout = () => {
+const DeleteCampaign = (props) => {
   return (
-    <PopUphp2b heading="Delete campaign useremail@gmail.com?" parah="Do you really want to delete this inbox from your account?"/>
+    <PopUphp2b heading="Delete campaign useremail@gmail.com?" parah="Do you really want to delete this inbox from your account?" close={{ function: props.close.function, value: props.close.value }}/>
   );
 };
 
-export default Logout;
+export default DeleteCampaign;

@@ -6,12 +6,18 @@ import TableImage from "../../../Icons/TableImage";
 import CopyIcon from "../Images/CopyIcon";
 import { Heading186 } from "../../../UI/Heading/Heading";
 
-const Runtest = () => {
+const Runtest = (props) => {
+  let copytext ="email4832ddsfsdxkekxslksdk@test-stage";
+
+  const copyToClipboard = (event) => {
+    navigator.clipboard.writeText(event.currentTarget.value);
+  }
+
   return (
-    <Modal>
+    <Modal onClick={props.close.function} value={props.close.value}>
       <div className={classes.flexend}>
         <div>
-          <DeleteIcon />
+          <DeleteIcon onClick={props.close.function} value={props.close.value}/>
         </div>
       </div>
       <div className={classes.flexcenter}>
@@ -28,14 +34,14 @@ const Runtest = () => {
         <div className={classes.copy}>
           <div>
             <p className={classes.copyparah}>
-              email4832ddsfsdxkekxslksdk@test-stage
+              {copytext}
             </p>
           </div>
           <div >
-            <button className={classes.copybutton}><CopyIcon/></button>
+            <button className={classes.copybutton} value={copytext} onClick={copyToClipboard}><CopyIcon/></button>
           </div>
         </div>
-        <Button className={classes.button}>Next</Button>
+        <Button className={classes.button} onClick={props.close.function} value={props.close.value}>Close</Button>
       </div>
     </Modal>
   );

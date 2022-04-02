@@ -9,7 +9,7 @@ const Heading = (props) => {
         <h1 className={classes.headingblue}>{props.children}</h1>
       </div>
       <div className={classes.icon}>
-        <DelIcon onClick={props.onClick}  value={props.value}/>
+        <DelIcon onClick={props.onClick}/>
       </div>
     </div>
   );

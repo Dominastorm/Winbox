@@ -1,99 +1,26 @@
 import React from "react";
 import classes from "./Dashboard.module.css";
-import Step1 from "./PopUp/Step1/Step1";
-import Step2 from "./PopUp/Step2/Step2";
-import Step3 from "./PopUp/Step3/Step3";
-import Logout from "./PopUp/Logout/Logout";
-import DeleteCampaign from "./PopUp/DeleteCampaign/DeleteCampaign";
-import Hero from "../../Elements/Hero/Hero";
-import Details from "../../Elements/Details/Details";
-import Table from "../../Elements/Table/Table";
-import TableImage from "../../Icons/TableImage";
-import Header from "./Header/Header";
-import Row from "./Row/Row";
+import MainBar from "./MainBar/MainBar";
+import Analytics from "../Analytics/Analytics";
 
 const Dashboard = () => {
-  const [showPopUp, setShowPopUp] = React.useState(0);
-  const [selectedInbox, setSelectedInbox] = React.useState(0);
+  const [showAnalysis, setShowAnalysis] = React.useState(0);
 
-  const renderPopUp = (event) => {
-    setShowPopUp(event.currentTarget.value);
+  const renderAnalysis = (event) => {
+    setShowAnalysis(1);
   };
 
-  const select = (event) => {
-    setSelectedInbox(event.currentTarget.value);
+  const renderMainPage = (event) => {
+    setShowAnalysis(0);
   };
-
-  // const data = [];
-
-  const data = [
-    {
-      inbox: "emailofuser@gmail.com",
-      sentToday: "1/1",
-      created: "January 1, 2022",
-      status: "Started",
-      complete: "false"
-    },
-    {
-      inbox: "emailofuser@gmail.com",
-      sentToday: "1/1",
-      created: "January 1, 2022",
-      status: "Completed",
-      complete: "true"
-    },
-  ];
-
-  const table = data.map((rowdetail) => (
-    <Row
-      inbox={rowdetail.inbox}
-      sentToday={rowdetail.sentToday}
-      created={rowdetail.created}
-      status={rowdetail.status}
-      complete={rowdetail.complete}
-    />
-  ));
 
   return (
     <>
-      {showPopUp === "1" && (
-        <Step1
-          selectedInbox={selectedInbox}
-          select={select}
-          close={{ function: renderPopUp, value: "0" }}
-          next={{ function: renderPopUp, value: "2" }}
-        />
+      {showAnalysis === 0 && (
+        <MainBar renderAnalysis={renderAnalysis} />
       )}
-      {showPopUp === "2" && (
-        <Step2
-          close={{ function: renderPopUp, value: "0" }}
-          prev={{ function: renderPopUp, value: "1" }}
-          inboxProvider={selectedInbox}
-        />
-      )}
-      <Header />
-      <Hero
-        heading="Warm up inbox"
-        parah="Manage inboxes you want to warm-up (0/0 used)"
-        buttontext="Add new inbox"
-        className={classes.hero}
-        onClick={renderPopUp}
-        value={1}
-      />
-      <Details />
-      {data.length != 0 ? (
-        <div className={classes.table}>
-          <ul>{table}</ul>
-        </div>
-      ) : (
-        <Table
-          heading="Warm up your inbox to never land in spam anymore"
-          parah="Run a new test to check email deliverability & spam insights"
-          buttontext="New Test"
-          onClick={renderPopUp}
-          value={1}
-        >
-          <TableImage height="20vh" />
-        </Table>
+      {showAnalysis === 1 && (
+        <Analytics renderMainPage={renderMainPage} />
       )}
     </>
   );

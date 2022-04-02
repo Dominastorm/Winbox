@@ -12,8 +12,12 @@ const Row = (props) => {
       <p className={classes.head}>{props.created}</p>
       <p className={classes.head}>{props.status}</p>
       <div className={classes.head2}>
-        <ChartIcon/>
-        <DeleteIcon/>
+      <button className={classes.button} onClick={props.renderReport}>
+        <ChartIcon />
+      </button>
+      <button className={classes.button}>
+        <DeleteIcon />
+      </button>
       </div>
     </Card>
   );

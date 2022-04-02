@@ -8,9 +8,9 @@ const Header = (props) => {
     <Card className={classes.background}>
       <div className={classes.flex}>
         <button className={classes.back}>
-          <div className={classes.icon}>
+          <button className={classes.goBackButton} onClick={props.goBack}>
             <ArrowIcon rotate={classes.arrow} />
-          </div>
+          </button>
         </button>
         <div>
           <p className={classes.parah}>
@@ -18,9 +18,9 @@ const Header = (props) => {
           </p>
         </div>
       </div>
-      <div className={classes.btn}>
-        <Button className={classes.btn}>{props.buttontext}</Button>
-      </div>
+      {props.buttontext && <div className={classes.btn}>
+        <Button className={classes.btn} onClick={props.buttonOnClick}>{props.buttontext}</Button>
+      </div>}
     </Card>
   );
 };

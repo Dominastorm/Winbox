@@ -31,6 +31,14 @@
   transform: rotate(90deg);
 }
 
-.icon {
-  margin-top: 1vh;
+.goBackButton {
+  border-radius: 50px;
+  background: none;
+  border: none;
+  height: 4vh;
+  width: 4vh;
+}
+
+.goBackButton:hover {
+  background: #fafafb;
 }

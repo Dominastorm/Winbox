@@ -1,10 +1,13 @@
-const DeleteIcon = () => {
+const DeleteIcon = (props) => {
   return (
     <svg
-      width="1.4vw"
+      width="auto"
       height="2.8vh"
       viewBox="0 0 24 24"
       fill="none"
+      style={{ cursor: "pointer" }}
+      onClick={props.onClick}
+      value={props.value}
       xmlns="http://www.w3.org/2000/svg"
     >
       <path

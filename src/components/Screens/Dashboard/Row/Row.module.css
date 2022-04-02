@@ -90,3 +90,11 @@ input:checked + .slider:before {
   -ms-transform: translateX(1.1vw);
   transform: translateX(1.1vw);
 }
+
+.button{
+  width: 1.5vw;
+  height: 2.8vh;
+  border: none;
+  background: none;
+  margin-right: 1vw;
+}

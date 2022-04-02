@@ -5,12 +5,25 @@ import Button from "../../../UI/Button/Button";
 import BlueButton from "../../../UI/BlueButton/Button";
 import { Heading186 } from "../../../UI/Heading/Heading";
 
-const Runtest = () => {
+const Runtest = (props) => {
+  let copytext ="email4832ddsfsdxkekxslksdk@test-stage";
+
+  const copyToClipboard = (event) => {
+    navigator.clipboard.writeText(event.currentTarget.value);
+  }
+
+  const hidePopUP = () => {
+    props.close.renderPopUp(0);
+  };
+
   return (
-    <Modal>
+    <Modal onClick={props.close.function} value={props.close.value}>
       <div className={classes.flexend}>
         <div>
-          <DeleteIcon />
+          <DeleteIcon
+            onClick={props.close.function}
+            value={props.close.value}
+          />
         </div>
       </div>
       <div className={classes.flexcenter}>
@@ -22,19 +35,24 @@ const Runtest = () => {
       </div>
       <div className={classes.flexcenterrow}>
         <div className={classes.divwidth}>
-          <input className={classes.input} placeholder="email4832ddsfsdxkekxslksdk@test-stage"/>
+          <input
+            className={classes.input}
+            placeholder={copytext}
+          />
         </div>
         <div className={classes.btndiv}>
-          <button className={classes.button}>Copy</button>
+          <button className={classes.button} value={copytext} onClick={copyToClipboard}>Copy</button>
         </div>
       </div>
       <div className={classes.flexcenterrow}>
         <div>
-          <BlueButton>Close</BlueButton>
+          <BlueButton onClick={props.close.function} value={props.close.value}>
+            Close
+          </BlueButton>
         </div>
         <div className={classes.whitespace}></div>
         <div>
-          <Button>Next</Button>
+          <Button onClick={props.next.function} value={props.next.value}>Next</Button>
         </div>
       </div>
     </Modal>

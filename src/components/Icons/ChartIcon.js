@@ -1,10 +1,12 @@
-const ChartIcon = () => {
+const ChartIcon = (props) => {
   return (
     <svg
       width="1.4vw"
       height="2.8vh"
       viewBox="0 0 24 24"
       fill="none"
+      style={{ cursor: "pointer" }}
+      onClick={props.onClick}
       xmlns="http://www.w3.org/2000/svg"
     >
       <path

@@ -1,0 +1,25 @@
+.center {
+  position:relative;
+  top:30px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  width: 95vw;
+  position: absolute;
+}
+
+.modal {
+  position: fixed;
+  width: 50vw;
+  background-color: white;
+  padding: 2vh 2vw;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  z-index: 30;
+  animation: slide-down 300ms ease-out forwards;
+  border: 2px solid #109CF1;
+  background: #F3FAFE;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
