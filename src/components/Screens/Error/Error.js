@@ -2,7 +2,7 @@ import Sidebar from "../../Elements/SideBar/SideBar";
 import Card from "../../UI/Card/Card";
 import { Heading186 } from "../../UI/Heading/Heading";
 import classes from "./Error.module.css";
-import Button from "../../UI/Button/Button";
+import {LinkButton} from "../../UI/Button/Button";
 import PlugIcon from "./PlugIcon";
 
 const Error = (props) => {
@@ -20,7 +20,9 @@ const Error = (props) => {
           Please go back to the homepage.
         </p>
         <div>
-          <Button className={classes.btn}>Go Home</Button>
+          <LinkButton className={classes.btn} to="/inbox">
+            Go Home
+          </LinkButton>
         </div>
       </Card>
     </>

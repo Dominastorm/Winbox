@@ -1,55 +1,69 @@
 import React, { useState } from "react";
 import classes from "./Data.module.css";
+import { Route, Switch, Redirect, NavLink } from "react-router-dom";
+
 import Card from "../../../UI/Card/Card";
-import Link from "./Link";
 import User from "./Tabs/User/User";
 import Account from "./Tabs/Account/Account";
-import Subscription from "./Tabs/Subscription/Subscription"
+import Subscription from "./Tabs/Subscription/Subscription";
 import Invoices from "./Tabs/Invoices/Invoices";
 
-const Data = () => {
-  const [selected, setSelected] = useState(1);
+const Navigation = () => {
+  return (
+    <Card className={classes.background}>
+      <NavLink
+        className={classes.navlink}
+        activeClassName={classes.selected}
+        to="/settings/user"
+      >
+        User
+      </NavLink>
+      <NavLink
+        className={classes.navlink}
+        activeClassName={classes.selected}
+        to="/settings/account"
+      >
+        Account
+      </NavLink>
+      <NavLink
+        className={classes.navlink}
+        activeClassName={classes.selected}
+        to="/settings/subscription"
+      >
+        Subscription
+      </NavLink>
+      <NavLink
+        className={classes.navlink}
+        activeClassName={classes.selected}
+        to="/settings/invoices"
+      >
+        Invoices
+      </NavLink>
+    </Card>
+  );
+};
 
+const Data = () => {
   return (
     <>
-      <Card className={classes.background}>
-        <Link
-          selected={selected === 1 ? 1 : 0}
-          onClick={() => {
-            setSelected(1);
-          }}
-        >
-          User
-        </Link>
-        <Link
-          selected={selected === 2 ? 1 : 0}
-          onClick={() => {
-            setSelected(2);
-          }}
-        >
-          Account
-        </Link>
-        <Link
-          selected={selected === 3 ? 1 : 0}
-          onClick={() => {
-            setSelected(3);
-          }}
-        >
-          Subscription
-        </Link>
-        <Link
-          selected={selected === 4 ? 1 : 0}
-          onClick={() => {
-            setSelected(4);
-          }}
-        >
-          Invoices
-        </Link>
-      </Card>
-      {selected === 1 && <User />}
-      {selected === 2 && <Account />}
-      {selected === 3 && <Subscription />}
-      {selected === 4 && <Invoices />}
+      <Navigation />
+      <Switch>
+        <Route path="/settings" exact>
+          <Redirect to="/settings/user" />
+        </Route>
+        <Route path="/settings/user" exact>
+          <User />
+        </Route>
+        <Route path="/settings/account" exact>
+          <Account />
+        </Route>
+        <Route path="/settings/Subscription" exact>
+          <Subscription />
+        </Route>
+        <Route path="/settings/invoices" exact>
+          <Invoices />
+        </Route>
+      </Switch>
     </>
   );
 };

@@ -7,7 +7,6 @@ import TableImage from "../Images/TableImage";
 import Runtest from "../Popups/Runtest";
 import EmailSpamChecker from "../Popups/EmailSpamChecker";
 import Row from "../Row/Row";
-import Header from "../../../Elements/Header/Header";
 
 const MainBar = (props) => {
   const [showPopUp, setShowPopUp] = React.useState("0");
@@ -71,10 +70,9 @@ const MainBar = (props) => {
       {showPopUp === "2" && (
         <EmailSpamChecker close={{ function: renderPopUp, value: "0" }} />
       )}
-      <Header/>
       <Hero
         heading="Email Blacklists & DNS Cheker"
-        parah="Check if you IPs & domains are blacklisted. Test your DNS settings to inprove your deliverability"
+        parah="Check if you IPs & domains are blacklisted. Test your DNS settings to improve your deliverability"
         buttontext="Run a new Test"
         onClick={renderPopUp}
         value="1"

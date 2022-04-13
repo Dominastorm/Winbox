@@ -7,11 +7,18 @@
   font-weight: 600;
   height: 5.2vh;
   width: 9vw;
-  font-size: 1.65vh
+  font-size: 1.65vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .button:hover,
 .button:active {
   background: #041186;
   border-color: #041186;
+}
+
+.removeStyle{
+  text-decoration: none;
 }

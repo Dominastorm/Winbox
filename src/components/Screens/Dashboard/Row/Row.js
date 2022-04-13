@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import classes from "./Row.module.css";
 import Card from "../../../UI/Card/Card";
 import DeleteIcon from "../../../Icons/DeleteIcon";
@@ -31,9 +33,9 @@ const Row = (props) => {
           <input type="checkbox" />
           <span className={classes.slider}></span>
         </label>
-        <button className={classes.button} onClick={props.renderAnalysis} >
+        <Link to="/inbox/analytics" >
           <ChartIcon />
-        </button>
+        </Link>
         <button className={classes.button} onClick={props.DeleteCampaignPopUp.function} value="4">
           <DeleteIcon />
         </button>

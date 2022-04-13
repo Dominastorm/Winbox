@@ -1,5 +1,8 @@
 import classes from "./SideBar.module.css";
 import Card from "../../UI/Card/Card";
+import { NavLink,useLocation } from "react-router-dom";
+import React from "react";
+
 import MessageIcon from "./icons/MessageIcon";
 import QuestionIcon from "./icons/QuestionIcon";
 import SettingsIcon from "./icons/SettingsIcon";
@@ -7,6 +10,8 @@ import SheildIcon from "./icons/SheildIcon";
 import Button3 from "./Button3";
 
 const SideBar = (props) => {
+  const path = useLocation().pathname.split('/')[1] ;
+
   return (
     <Card className={classes.background}>
       <span className={classes.center}>
@@ -14,45 +19,39 @@ const SideBar = (props) => {
           <img src="images/expand.png" className={classes.expand} />
         </div>
         <div className={classes.border} />
-        <div className={classes.container}>
-          <Button3
-            parah="Inboxes"
-            onClick={props.renderPage}
-            value="1"
-            selected={props.selectedPage == 1 ? 1 : 0}
+        <div className={classes.container}  >
+          <NavLink className={classes.removestyle} to="/inbox">
+            <Button3 parah="Inboxes" selected={path == "inbox" || path == "/"  ? 1 : 0}>
+              <MessageIcon />
+            </Button3>
+          </NavLink>
+          <NavLink
+            className={classes.removestyle}
+            to="/email-blacklist-and-DNS-checker"
           >
-            <MessageIcon />
-          </Button3>
-          <Button3
-            parah="Blacklists & DNS Checker"
-            onClick={props.renderPage}
-            value="2"
-            selected={props.selectedPage == 2 ? 1 : 0}
-          >
-            <SheildIcon />
-          </Button3>
+            <Button3
+              parah="Blacklists & DNS Checker"
+              selected={path == "email-blacklist-and-DNS-checker" ? 1 : 0}
+            >
+              <SheildIcon />
+            </Button3>
+          </NavLink>
         </div>
         <div className={classes.border} />
       </span>
       <span className={classes.center}>
         <div className={classes.border} />
-        <div className={classes.container}>
-          <Button3
-            parah="Help"
-            onClick={props.renderPage}
-            value="3"
-            selected={props.selectedPage == 3 ? 1 : 0}
-          >
-            <QuestionIcon />
-          </Button3>
-          <Button3
-            parah="Settings"
-            onClick={props.renderPage}
-            value="4"
-            selected={props.selectedPage == 4 ? 1 : 0}
-          >
-            <SettingsIcon />
-          </Button3>
+        <div className={classes.container}  >
+          <NavLink className={classes.removestyle} to="/inbox">
+            <Button3 parah="Help" selected={path == "help" ? 1 : 0}>
+              <QuestionIcon />
+            </Button3>
+          </NavLink>
+          <NavLink className={classes.removestyle} to="/settings">
+            <Button3 parah="Settings" selected={path == "settings" ? 1 : 0}>
+              <SettingsIcon />
+            </Button3>
+          </NavLink>
         </div>
       </span>
     </Card>

@@ -32,3 +32,38 @@
   height: auto;
   object-fit: contain;
 }
+
+.removestyle{
+  text-decoration:none;
+}
+
+.removestyle .container {
+  width: 100%;
+  margin: 1vh 0 2vh 0;
+  text-align: center;
+  cursor: pointer;
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+ .removestyle .parah {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 7px;
+  color: #b2bfd0;
+  margin-top: 0.8vh;
+  width: 100%;
+}
+
+.removestyle  .icon{
+  width:36px;
+  height: 36px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

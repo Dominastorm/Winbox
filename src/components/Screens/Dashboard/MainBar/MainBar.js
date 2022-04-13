@@ -10,7 +10,6 @@ import Hero from "../../../Elements/Hero/Hero";
 import Details from "../../../Elements/Details/Details";
 import Table from "../../../Elements/Table/Table";
 import TableImage from "../../../Icons/TableImage";
-import Header from "../../../Elements/Header/Header";
 import Row from "../Row/Row";
 
 const Dashboard = (props) => {
@@ -91,7 +90,6 @@ const Dashboard = (props) => {
       {connnectionPopUp == "1" && (
         <ConnectionUpdate />
       )}
-      <Header />
       <Hero
         heading="Warm up inbox"
         parah="Manage inboxes you want to warm-up (0/0 used)"

@@ -25,6 +25,9 @@
   border: none;
   margin-right: 1vw;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .arrow {
