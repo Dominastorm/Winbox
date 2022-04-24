@@ -8,7 +8,7 @@ import CustomSchedule from "./PopUp/CustomSchedule/CustomSchedule";
 const Analytics = (props) => {
   return (
     <>
-      <Header parah="useremail@gmail.com" to="/inbox/dashboard" />
+      <Header parah="useremail@gmail.com" to="/inbox" />
       <Details />
       <Graph />
       <Table />

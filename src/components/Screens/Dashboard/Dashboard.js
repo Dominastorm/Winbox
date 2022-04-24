@@ -1,7 +1,6 @@
 import React from "react";
 import { Route, Switch, Redirect} from "react-router-dom";
 
-import classes from "./Dashboard.module.css";
 import MainBar from "./MainBar/MainBar";
 import Analytics from "../Analytics/Analytics";
 
@@ -10,9 +9,6 @@ const Dashboard = () => {
       <Switch>
         <Route path="/inbox" exact>
           <MainBar />
-        </Route>
-        <Route path="/inbox/dashboard" exact>
-
         </Route>
         <Route path="/inbox/analytics" exact>
           <Analytics />

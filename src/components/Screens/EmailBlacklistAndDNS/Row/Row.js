@@ -1,3 +1,5 @@
+import {Link} from "react-router-dom"
+
 import classes from "./Row.module.css";
 import Card from "../../../UI/Card/Card";
 import DeleteIcon from "../../../Icons/DeleteIcon";
@@ -12,9 +14,9 @@ const Row = (props) => {
       <p className={classes.head}>{props.created}</p>
       <p className={classes.head}>{props.status}</p>
       <div className={classes.head2}>
-      <button className={classes.button} onClick={props.renderReport}>
+      <Link className={classes.button} to="/email-blacklist-and-DNS-checker/report">
         <ChartIcon />
-      </button>
+      </Link>
       <button className={classes.button}>
         <DeleteIcon />
       </button>

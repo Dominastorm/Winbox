@@ -6,12 +6,17 @@ import Drive from "../../../Elements/DivIHPb/DivIHPb";
 import MessageIcon from "./Icons/MessageIcon";
 import ScoreIcon from "./Icons/ScoreIcon";
 import Heading, { Heading186 } from "../../../UI/Heading/Heading";
-import DropdownIcon from "../../../Icons/DropdownIcon";
+import DropdownIcon from "./Icons/DropdownIcon";
 import Row from "./TickRow/Row";
 import LinkCopiedPopUp from "../Popups/LinkCopiedPopUp";
 
 const Report = (props) => {
   const [showPopUp, setShowPopUp] = React.useState("0");
+  const [openBox, setOpenBox] = React.useState(0);
+
+  const openDialogBox = () => {
+    setOpenBox(!openBox);
+  }
 
   const closePopUp = () => {
     setShowPopUp("0");
@@ -28,8 +33,7 @@ const Report = (props) => {
       <Header
         parah="useremail@gmail.com"
         buttontext="Share my Report"
-        goBack={props.renderMainPage}
-        buttonOnClick={renderPopUp}
+        to="/email-blacklist-and-DNS-checker"
       />
       <div className={classes.flexhero}>
         <Drive
@@ -54,13 +58,13 @@ const Report = (props) => {
           <div className={classes.status}>
             <h3>Good</h3>
           </div>
-          <button className={classes.dropdownbtn}>
-            <DropdownIcon />
+          <button className={classes.dropdownbtn} onClick={openDialogBox}>
+            <DropdownIcon isOpen={openBox}/>
           </button>
         </div>
       </Card>
-      <Card className={classes.bluebox}>
-        <Heading186>All is good, send the email you want to test</Heading186>
+       <Card className={classes.bluebox} style={{ display: openBox ?  "none" : "flex"}}>
+        <Heading186 >All is good, send the email you want to test</Heading186>
         <p className={classes.parah}>
           Your emails can be reported as spam if you don’t offer an easy way for
           recipients to unsuscribe to your mail list. This can hurt badly your

@@ -12,16 +12,17 @@ import Sidebar from "./components/Elements/SideBar/SideBar";
 import Header from "./components/Elements/Header/Header";
 
 function App() {
-  const [selectedPage, setSelectedPage] = React.useState(1);
+  const [SideBarOpen,setSideBarOpen] = React.useState(0);
+  const sideBarClasses = [classes.sidebar , SideBarOpen ? classes.sidebarOpen : classes.sidebarClose ]
 
-  const renderPage = (event) => {
-    setSelectedPage(event.currentTarget.value);
-  };
+  const toggleSideBar = (event) => {
+    setSideBarOpen(!SideBarOpen);
+  }
 
   return (
     <div className={classes.container}>
-      <div className={classes.sidebar}>
-        <Sidebar renderPage={renderPage} selectedPage={selectedPage} />
+      <div className={sideBarClasses.join(' ')}>
+        <Sidebar isOpen={SideBarOpen} togglePopUp={toggleSideBar}/>
       </div>
       <div className={classes.main}>
         <Header/>
@@ -32,7 +33,7 @@ function App() {
           <Route path="/inbox">
             <Dashboard />
           </Route>
-          <Route path="/email-blacklist-and-DNS-checker" exact>
+          <Route path="/email-blacklist-and-DNS-checker">
             <EmailBlacklistAndDNS />
           </Route>
           <Route path="/settings">

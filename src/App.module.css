@@ -7,15 +7,24 @@
   flex-direction: row;
   justify-content: center;
   padding: 2.5vh 0;
+  flex:1;
 }
 
 .sidebar{
-  width: 75px;
   height: 95vh;
   top:2.5vh;
   padding-right: 6px;
   padding-left: 1.2vw;
   position: sticky;
+  transition: width 0.3s ease-out;
+}
+
+.sidebarClose{
+  width: 75px;
+}
+
+.sidebarOpen{
+  width: 200px;
 }
 
 .main{

@@ -1,3 +1,5 @@
+import classes from "./Dropdown.module.css";
+
 const Icon = (props) => {
   return (
     <svg
@@ -5,6 +7,8 @@ const Icon = (props) => {
       height="1.2vh"
       viewBox="0 0 10 6"
       fill="none"
+      className = {classes.dropdown}
+      style= {{ transform: props.isOpen ?  "none" : "rotate(-180deg)"}}
       xmlns="http://www.w3.org/2000/svg"
     >
       <path

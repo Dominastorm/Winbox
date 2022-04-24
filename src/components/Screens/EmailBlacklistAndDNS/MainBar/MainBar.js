@@ -55,7 +55,7 @@ const MainBar = (props) => {
       score={rowdetail.score}
       created={rowdetail.created}
       status={rowdetail.status}
-      renderReport={props.renderReport}
+      to="/email-blacklist-and-DNS-checker/report"
     />
   ));
 
