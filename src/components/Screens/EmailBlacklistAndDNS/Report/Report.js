@@ -1,5 +1,6 @@
 import React from "react";
 import classes from "./Report.module.css";
+
 import Card from "../../../UI/Card/Card";
 import Header from "../../../Elements/Headerahb/Header";
 import Drive from "../../../Elements/DivIHPb/DivIHPb";
@@ -63,7 +64,7 @@ const Report = (props) => {
           </button>
         </div>
       </Card>
-       <Card className={classes.bluebox} style={{ display: openBox ?  "none" : "flex"}}>
+       <Card className={classes.bluebox} style={{ display: openBox ?  "flex" : "none"}}>
         <Heading186 >All is good, send the email you want to test</Heading186>
         <p className={classes.parah}>
           Your emails can be reported as spam if you don’t offer an easy way for

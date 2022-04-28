@@ -7,6 +7,8 @@ import User from "./Tabs/User/User";
 import Account from "./Tabs/Account/Account";
 import Subscription from "./Tabs/Subscription/Subscription";
 import Invoices from "./Tabs/Invoices/Invoices";
+import Error from "../../Error/Error";
+
 
 const Navigation = () => {
   return (
@@ -62,6 +64,9 @@ const Data = () => {
         </Route>
         <Route path="/settings/invoices" exact>
           <Invoices />
+        </Route>
+        <Route path="/">
+          <Redirect to="/error" />
         </Route>
       </Switch>
     </>

@@ -39,8 +39,11 @@ function App() {
           <Route path="/settings">
             <Settings />
           </Route>
-          <Route path="/">
+          <Route path="/error">
             <Error/>
+          </Route>
+          <Route path="/">
+            <Redirect to="/error" />
           </Route>
         </Switch>
       </div>
