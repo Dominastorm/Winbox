@@ -8,8 +8,7 @@ import Logout from "../PopUp/Logout/Logout";
 import DeleteCampaign from "../PopUp/DeleteCampaign/DeleteCampaign";
 import Hero from "../../../Elements/Hero/Hero";
 import Details from "../../../Elements/Details/Details";
-import Table from "../../../Elements/Table/Table";
-import TableImage from "../../../Icons/TableImage";
+import Table from "./Table";
 import Row from "../Row/Row";
 
 const Dashboard = (props) => {
@@ -34,37 +33,6 @@ const Dashboard = (props) => {
     setSelectedInbox(event.currentTarget.value);
   };
 
-  // const data = [];
-
-  const data = [
-    {
-      inbox: "emailofuser@gmail.com",
-      sentToday: "1/1",
-      created: "January 1, 2022",
-      status: "Started",
-      complete: "false",
-    },
-    {
-      inbox: "emailofuser@gmail.com",
-      sentToday: "1/1",
-      created: "January 1, 2022",
-      status: "Completed",
-      complete: "true",
-    },
-  ];
-
-  const table = data.map((rowdetail) => (
-    <Row
-      inbox={rowdetail.inbox}
-      sentToday={rowdetail.sentToday}
-      created={rowdetail.created}
-      status={rowdetail.status}
-      complete={rowdetail.complete}
-      renderAnalysis={props.renderAnalysis}
-      DeleteCampaignPopUp={{ function: renderPopUp, open: "4", close: "0" }}
-    />
-  ));
-
   return (
     <>
       {showPopUp === "1" && (
@@ -87,9 +55,7 @@ const Dashboard = (props) => {
       {showPopUp === "4" && (
         <DeleteCampaign close={{ function: renderPopUp, value: "0" }} />
       )}
-      {connnectionPopUp == "1" && (
-        <ConnectionUpdate />
-      )}
+      {connnectionPopUp == "1" && <ConnectionUpdate />}
       <Hero
         heading="Warm up inbox"
         parah="Manage inboxes you want to warm-up (0/0 used)"
@@ -99,21 +65,7 @@ const Dashboard = (props) => {
         value={1}
       />
       <Details />
-      {data.length != 0 ? (
-        <div className={classes.table}>
-          <ul>{table}</ul>
-        </div>
-      ) : (
-        <Table
-          heading="Warm up your inbox to never land in spam anymore"
-          parah="Run a new test to check email deliverability & spam insights"
-          buttontext="New Test"
-          onClick={renderPopUp}
-          value={1}
-        >
-          <TableImage height="20vh" />
-        </Table>
-      )}
+    <Table renderPopUp={renderPopUp}/>
     </>
   );
 };

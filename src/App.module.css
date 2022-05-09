@@ -16,15 +16,17 @@
   padding-right: 6px;
   padding-left: 1.2vw;
   position: sticky;
-  transition: width 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .sidebarClose{
-  width: 75px;
+  width: 6vw;
+  min-width: 75px;
 }
 
 .sidebarOpen{
-  width: 200px;
+  width: 15.7vw;
+  min-width: 200px;
 }
 
 .main{

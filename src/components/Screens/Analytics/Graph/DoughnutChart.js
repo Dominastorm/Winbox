@@ -3,16 +3,16 @@ import React from "react";
 import { Doughnut } from "react-chartjs-2";
 import classes from "./Doughnut.module.css";
 
-export default function Dough() {
-  const data = [20, 5];
+export default function Dough(props) {
+  const data = [props.data.inbox, props.data.spam];
   const labels = ["Inbox", "Spam"];
   const color = ["#109CF1", "#FC7676"];
 
   const customLabels = labels.map((label, index) => `${label}: ${data[index]}`);
   const text = data[0] + "/" + data[1];
   const percent = [
-    (100 * data[0]) / (data[1] + data[0]) + "%",
-    100 - (data[0] / (data[1] + data[0])) * 100 + "%",
+    ((100 * data[0]) / (data[1] + data[0])).toFixed(2) + "%",
+    (100 - (data[0] / (data[1] + data[0])) * 100).toFixed(2) + "%",
   ];
 
   const chartdata = {

@@ -1,47 +1,40 @@
+import React from "react"
 import Row from "./Row";
 
-const details = [
-  {
-    date: "January 1, 2022",
-    interactions: 1,
-    replypercent: 30,
-    progress: 30,
-    sent: 1,
-  },
-  {
-    date: "January 1, 2022",
-    interactions: 1,
-    replypercent: 30,
-    progress: 30,
-    sent: 1,
-  },
-  {
-    date: "January 1, 2022",
-    interactions: 1,
-    replypercent: 30,
-    progress: 30,
-    sent: 1,
-  },
-  {
-    date: "January 1, 2022",
-    interactions: 1,
-    replypercent: 30,
-    progress: 30,
-    sent: 1,
-  },
-];
-const Grid = () => {
-  const List = details.map((meal) => (
-    <Row
-      date={meal.date}
-      interactions={meal.interactions}
-      replypercent={meal.replypercent}
-      progress={meal.progress}
-      sent={meal.sent}
-    />
-  ));
+var request = new XMLHttpRequest();
+var details;
+var List;
 
-  return <>{List}</>;
+const Grid = () => {
+
+  const [loading, setLoading] = React.useState(1);
+
+  React.useEffect(() => {
+    request.open(
+      "GET",
+      "https://private-9933d8-winbox.apiary-mock.com/schedule"
+    );
+
+    request.onreadystatechange = function () {
+      if (this.readyState === 4) {
+        details = JSON.parse(this.responseText);
+        console.log(details);
+        List = details.map((data) => (
+          <Row
+            date={data.date}
+            interactions={data.interactions}
+            replypercent={data.reply_percent}
+            progress={data.progress_percent}
+            sent={data.sent}
+          />
+        ));
+        setLoading(0);
+      }
+    };
+    request.send();
+  }, []);
+
+  return <>{loading == 0 && List}</>;
 };
 
 export default Grid;
