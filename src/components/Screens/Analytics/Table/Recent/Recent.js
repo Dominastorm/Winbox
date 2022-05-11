@@ -7,13 +7,15 @@ import Message from "./Message";
 
 var request = new XMLHttpRequest();
 var arr;
-var data = [];
+var data;
 var messagetable;
 
 const Details = () => {
   const [loading, setLoading] = React.useState(1);
 
   React.useEffect(() => {
+    data = [];
+    
     request.open(
       "GET",
       "https://private-9933d8-winbox.apiary-mock.com/activity"

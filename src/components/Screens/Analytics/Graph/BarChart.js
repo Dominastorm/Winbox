@@ -5,30 +5,32 @@ import { Bar } from "react-chartjs-2";
 
 var request = new XMLHttpRequest();
 var arr;
-var data = {
-  labels: [],
-  Sent: {
-    label: "Sent",
-    dataSet: [],
-  },
-  Opened: {
-    label: "Opened",
-    dataSet: [],
-  },
-  Spam: {
-    label: "Spam",
-    dataSet: [],
-  },
-  Replies: {
-    label: "Replies",
-    dataSet: [],
-  },
-};
+var data;
 
 export default function App() {
   const [loading, setLoading] = React.useState(1);
 
   React.useEffect(() => {
+    data = {
+      labels: [],
+      Sent: {
+        label: "Sent",
+        dataSet: [],
+      },
+      Opened: {
+        label: "Opened",
+        dataSet: [],
+      },
+      Spam: {
+        label: "Spam",
+        dataSet: [],
+      },
+      Replies: {
+        label: "Replies",
+        dataSet: [],
+      },
+    };
+    
     request.open(
       "GET",
       "https://private-9933d8-winbox.apiary-mock.com/warm_plan"
