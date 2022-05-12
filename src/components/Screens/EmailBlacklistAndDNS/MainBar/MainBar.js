@@ -8,56 +8,43 @@ import Runtest from "../Popups/Runtest";
 import EmailSpamChecker from "../Popups/EmailSpamChecker";
 import Row from "../Row/Row";
 
+var request = new XMLHttpRequest();
+var da;
+var table;
+
 const MainBar = (props) => {
   const [showPopUp, setShowPopUp] = React.useState("0");
+  const [loading, setLoading] = React.useState(1);
 
   const renderPopUp = (event) => {
     setShowPopUp(event.currentTarget.value);
   };
 
-  // const data = [];
+  React.useEffect(() => {
+    request.open(
+      "GET",
+      "https://private-9933d8-winbox.apiary-mock.com/email_score"
+    );
 
-  const data = [
-    {
-      inbox: "Awaiting email...",
-      subject: "-",
-      score: "-",
-      created: "January 1, 2022",
-      status: "Pending",
-    },
-    {
-      inbox: "Awaiting email...",
-      subject: "-",
-      score: "-",
-      created: "January 1, 2022",
-      status: "Pending",
-    },
-    {
-      inbox: "Awaiting email...",
-      subject: "-",
-      score: "-",
-      created: "January 1, 2022",
-      status: "Pending",
-    },
-    {
-      inbox: "Awaiting email...",
-      subject: "-",
-      score: "-",
-      created: "January 1, 2022",
-      status: "Pending",
-    },
-  ];
-
-  const table = data.map((rowdetail) => (
-    <Row
-      inbox={rowdetail.inbox}
-      subject={rowdetail.subject}
-      score={rowdetail.score}
-      created={rowdetail.created}
-      status={rowdetail.status}
-      to="/email-blacklist-and-DNS-checker/report"
-    />
-  ));
+    request.onreadystatechange = function () {
+      if (this.readyState === 4) {
+        da = JSON.parse(this.responseText);
+        console.log(da);
+        table = da.map((rowdetail) => (
+          <Row
+            inbox={rowdetail.email_id}
+            subject={rowdetail.subject}
+            score={rowdetail.score}
+            created={rowdetail.date}
+            status={rowdetail.status}
+            to="/email-blacklist-and-DNS-checker/report"
+          />
+        ));
+        setLoading(0);
+      }
+    };
+    request.send();
+  }, []);
 
   return (
     <>
@@ -78,7 +65,7 @@ const MainBar = (props) => {
         value="1"
       />
       <Details />
-      {data.length != 0 ? (
+      {da != undefined ? (
         <div className={classes.table}>
           <ul>{table}</ul>
         </div>

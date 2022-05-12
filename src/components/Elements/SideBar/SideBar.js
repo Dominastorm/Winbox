@@ -29,7 +29,7 @@ const SideBar = (props) => {
               <span class="bar bar2"></span>
               <span class="bar bar3"></span>
               <span class="bar bar4"></span>
-            <span class="bar bar5" style={{height: "3px"}}></span>
+            <span class="bar bar5"></span>
             </div>
           </label>
         </div>

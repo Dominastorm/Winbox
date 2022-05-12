@@ -1,4 +1,4 @@
-const Icon = () => {
+const Icon = (props) => {
   return (
     <svg
       width="2.8vh"
@@ -7,8 +7,8 @@ const Icon = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <circle cx="12" cy="12" r="9" stroke="#109CF1" stroke-width="2" />
-      <path d="M8 12L11 15L16 9" stroke="#109CF1" stroke-width="2" />
+      <circle cx="12" cy="12" r="9" stroke={props.color === "yellow" ? "#eed202":"#109CF1"} stroke-width="2" />
+      <path d="M8 12L11 15L16 9" stroke={props.color === "yellow" ? "#eed202":"#109CF1"} stroke-width="2" />
     </svg>
   );
 };

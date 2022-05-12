@@ -6,6 +6,7 @@ import DeleteIcon from "../../../Icons/DeleteIcon";
 import ChartIcon from "../../../Icons/ChartIcon";
 
 const Row = (props) => {
+  console.log(props)
   return (
     <Card className={classes.background}>
       <p className={classes.head}>{props.inbox}</p>

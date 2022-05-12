@@ -23,7 +23,7 @@ const Row = (props) => {
       <div className={classes.head}>
         <div
           className={classes.status}
-          style={props.complete == "true" ? orange : green}
+          style={props.status == "off" ? orange : green}
         >
           <p>{props.status}</p>
         </div>

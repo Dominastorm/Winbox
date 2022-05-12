@@ -6,10 +6,10 @@ const Row = (props) => {
     <div className={`${props.className}  ${classes.domain} `}>
       <div className={classes.flex}>
         <div className={classes.flex}>
-            <TickIcon />
+            <TickIcon color={props.status== "good" ? "blue" : "yellow"}/>
         </div>
         <div>
-          <p className={classes.parah}>lorem ipsum.org</p>
+          <p className={classes.parah}>{props.name}</p>
         </div>
       </div>
     </div>
