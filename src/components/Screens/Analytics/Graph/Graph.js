@@ -17,7 +17,7 @@ const Graph = () => {
   React.useEffect(() => {
     request.open("GET", "https://private-9933d8-winbox.apiary-mock.com/report");
 
-    request.onreadystatechange = function () {
+    request.onreadystatechange = function() {
       if (this.readyState === 4) {
         data = JSON.parse(this.responseText);
         setLoading(0);
@@ -27,30 +27,26 @@ const Graph = () => {
     request.send();
   }, []);
 
-  return (
-    <>
-      {loading == 0 && <Details data={data} />}
-      <div className={classes.background}>
-        <Card className={classes.bar}>
-          <div className={classes.heading}>
-            <Heading>Inbox warning plan</Heading>
-
-            <div className={classes.barchart}>
-              <React.StrictMode>
-                <BarChart />
-              </React.StrictMode>
-            </div>
-          </div>
-        </Card>
-        <Card className={classes.circle}>
-          <div className={classes.heading}>
-            <Heading>Inbox vs Spam</Heading>
-            {loading == 0 && <DoughnutChart data={data} />}
-          </div>
-        </Card>
+  return (<> {
+    loading == 0 && <Details data={data}/>
+  } < div className = {
+    classes.background
+  } > <Card className={classes.bar}>
+    <div className={classes.heading}>
+      <Heading>Inbox warning plan</Heading>
+      <div className={classes.barchart}>
+        <BarChart/>
       </div>
-    </>
-  );
+    </div>
+  </Card>
+  <Card className={classes.circle}>
+    <div className={classes.heading}>
+      <Heading>Inbox vs Spam</Heading>
+      {loading == 0 && <DoughnutChart data={data}/>}
+    </div>
+  </Card>
+</div> < />
+);
 };
 
 export default Graph;

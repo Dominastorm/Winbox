@@ -15,7 +15,7 @@ import Header from "./components/Elements/Header/Header";
 
 function App() {
   const [SideBarOpen, setSideBarOpen] = React.useState(0);
-  const [Auth, setAuth] = React.useState(0);
+  const [Auth, setAuth] = React.useState(1);
   const history = useHistory();
 
   const sideBarClasses = [
@@ -30,14 +30,14 @@ function App() {
   const Authenticate = () => {
     setAuth(1);
     history.replace("/inbox");
-  }
+  };
 
   return (
     <>
       {Auth == 0 && (
         <Switch>
           <Route path="/login">
-            <Login onClick={Authenticate}/>
+            <Login onClick={Authenticate} />
           </Route>
           <Route path="/sign-up">
             <SignUp />
@@ -67,10 +67,9 @@ function App() {
               <Route path="/settings">
                 <Settings />
               </Route>
-              {/*
-          <Route path="/error">
-            <Error/>
-        </Route>*/}
+              <Route path="/error">
+                <Error />
+              </Route>
               <Route path="/">
                 <Redirect to="/error" />
               </Route>
