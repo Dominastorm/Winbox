@@ -3,7 +3,6 @@ import classes from "./MainBar.module.css";
 import Step1 from "../PopUp/Step1/Step1";
 import Step2 from "../PopUp/Step2/Step2";
 import ConnectionUpdate from "../PopUp/Step2/ConnectionUpdate";
-import Step3 from "../PopUp/Step3/Step3";
 import Logout from "../PopUp/Logout/Logout";
 import DeleteCampaign from "../PopUp/DeleteCampaign/DeleteCampaign";
 import Hero from "../../../Elements/Hero/Hero";
